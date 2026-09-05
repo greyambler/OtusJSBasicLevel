@@ -3,7 +3,7 @@
     src: local("Playfair Display Regular"),
         local("PlayfairDisplay Regular"),
         local("PlayfairDisplay-Regular"),
-        url("../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+        url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
 }
 
 @font-face {
@@ -11,14 +11,14 @@
     src: local("Playfair Display SemiBold"),
         local("PlayfairDisplay SemiBold"),
         local("PlayfairDisplay-SemiBold"),
-        url("../fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf");
+        url("../fonts/Playfair_Display/PlayfairDisplay-SemiBold.ttf");
 }
 
 @font-face {
     font-family: "Roboto";
     src: local("Roboto Regular"),
         local("Roboto-Regular"),
-        url("../fonts/Roboto/static/Roboto-Regular.ttf");
+        url("../fonts/Roboto/Roboto-Regular.ttf");
     font-weight: normal;
 }
 
@@ -26,7 +26,7 @@
     font-family: "Roboto";
     src: local("Roboto Bold"),
         local("Roboto-Bold"),
-        url("../fonts/Roboto/static/Roboto-Bold.ttf");
+        url("../fonts/Roboto/Roboto-Bold.ttf");
     font-weight: bold;
 }
 
@@ -34,6 +34,6 @@
 @font-face {
     font-family: "Bitter";
     src: local("Bitter"),
-        url("../fonts/Bitter/static/Bitter-Regular.ttf");
+        url("../fonts/Bitter/Bitter-Regular.ttf");
     font-weight: normal;
 }
