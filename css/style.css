@@ -1,0 +1,83 @@
+@import "./fonts.css";
+
+body * {
+  font-family: "Roboto", serif;
+  font-weight: normal;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/* header */
+h1 {
+  font-family: "Playfair Display SemiBold";
+  font-weight: 600;
+  font-size: 86px;
+  line-height: 120%;
+}
+
+a {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/* header */
+
+/* main */
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#header-biography-name {
+  font-family: "Playfair Display Regular";
+  font-weight: 500;
+  font-size: 86px;
+}
+
+#p-biography {
+  font-size: 18px;
+}
+
+#ul-biography>li {
+  font-size: 18px;
+}
+
+#p-blockquote {
+  font-family: "Bitter";
+  font-weight: 400;
+  font-size: 26px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+li {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* main */
+
+/* footer */
+footer>ul>li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+/* footer */
