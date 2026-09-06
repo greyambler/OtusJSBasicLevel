@@ -1,39 +1,40 @@
+/* по кодстайле лучше тут сделать маленькими буками названия папок и шрифтов */
 @font-face {
-  font-family: "Playfair Display Regular";
-  src: local("Playfair Display Regular"),
-    local("PlayfairDisplay Regular"),
-    local("PlayfairDisplay-Regular"),
-    url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+  font-family: "playfair display regular";
+  src: local("playfair display regular"),
+    local("playfairdisplay regular"),
+    local("playfairdisplay-regular"),
+    url("../fonts/playfair-display/playfairdisplay-regular.ttf");
 }
 
 @font-face {
-  font-family: "Playfair Display SemiBold";
-  src: local("Playfair Display SemiBold"),
-    local("PlayfairDisplay SemiBold"),
-    local("PlayfairDisplay-SemiBold"),
-    url("../fonts/Playfair_Display/PlayfairDisplay-SemiBold.ttf");
+  font-family: "playfair display semibold";
+  src: local("playfair display semibold"),
+    local("playfairdisplay semibold"),
+    local("playfairdisplay-semibold"),
+    url("../fonts/playfair-display/playfairdisplay-semibold.ttf");
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto Regular"),
-    local("Roboto-Regular"),
-    url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-family: "roboto";
+  src: local("roboto regular"),
+    local("roboto-regular"),
+    url("../fonts/roboto/roboto-regular.ttf");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto Bold"),
-    local("Roboto-Bold"),
-    url("../fonts/Roboto/Roboto-Bold.ttf");
+  font-family: "roboto";
+  src: local("roboto bold"),
+    local("roboto-bold"),
+    url("../fonts/roboto/roboto-bold.ttf");
   font-weight: bold;
 }
 
 
 @font-face {
-  font-family: "Bitter";
-  src: local("Bitter"),
-    url("../fonts/Bitter/Bitter-Regular.ttf");
+  font-family: "bitter";
+  src: local("bitter"),
+    url("../fonts/bitter/bitter-regular.ttf");
   font-weight: normal;
 }

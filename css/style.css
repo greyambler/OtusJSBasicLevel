@@ -1,17 +1,25 @@
+/* лучше сразу сюда положить, чтобы не ходить на сервер */
+@import "./reset.css";
 @import "./fonts.css";
 
-body * {
-  font-family: "Roboto", serif;
+/* тут можно без * внутри бади будет работать наследование 
+body * { 
+todo: Если удрать * в body, то строчки наползают друг на друга почему-то ... 
+св-во line-height вроде наследуемое?*/
+
+body {
+  font-family: "roboto", serif;
   font-weight: normal;
   line-height: 100%;
-  letter-spacing: 0%;
+  /* леттер спейсинг 0% можно не указывать
+  letter-spacing: 0%; */
   color: #000000;
   background-color: #FFFFFF;
 }
 
 /* header */
 h1 {
-  font-family: "Playfair Display SemiBold";
+  font-family: "playfair display semiBold";
   font-weight: 600;
   font-size: 86px;
   line-height: 120%;
@@ -30,25 +38,34 @@ h2 {
   font-size: 24px;
 }
 
-#header-biography-name {
-  font-family: "Playfair Display Regular";
-  font-weight: 500;
+/* стилизацию лучше делать по классам, классы можно использовать и легко перопределять 
+#header-biography-name*/
+.biography-name {
+  font-family: "playfair display regular";
   font-size: 86px;
 }
 
-#p-biography {
+.post-name {
   font-size: 18px;
 }
 
-#ul-biography>li {
+/* лучше сделать класс для li и задать стили,
+так будет меньше вес + чем проще селектор, тем быстрее читается
+.#ul-biography>li  { */
+.competencies {
   font-size: 18px;
 }
 
-#p-blockquote {
-  font-family: "Bitter";
+/* старайтесь не использовать в названия теги, так как тег поменяется и потом нужно будет менять
+а если будете переделывать на классы то будут проблемы с переисопльзуемостью 
+p-biography */
+.davis {
+  font-family: "bitter";
   font-weight: 400;
   font-size: 26px;
 }
+
+/* стилизацию лучше делать по классам, классы можно использовать и легко перопределять */
 
 h3 {
   font-weight: 700;
@@ -73,11 +90,15 @@ li {
 /* main */
 
 /* footer */
-footer>ul>li {
+/* здесь тоже лучше упростить до классов
+footer>ul>li  */
+.footer-controls {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
+  /* задайте фон в футере */
+  background-color: #0D0D0D;
 }
 
 /* footer */

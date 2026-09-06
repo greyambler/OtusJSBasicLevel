@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <title>JavaScript-разработчик. Базовый уровень</title>
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/reset.css" />
+  <!-- лучше все стили положить в стайл css
+  так вы будете меньше раз ходить на сервер
+  <link rel="stylesheet" href="./css/reset.css" /> -->
 
 </head>
 
@@ -33,20 +35,22 @@
       <img src="./img/katya-mills-dune.jpg" alt="katya-mills-dune" />
       <!-- лучше делайте через относительный путь ./ там потом, когда будете делать githubpages могут быть битые ссылки -->
       <h2>Biography</h2>
-      <h2 id="header-biography-name">Katya Mills</h2>
-      <p id="p-biography">Art Director</p>
-      <ul id="ul-biography">
-        <li>Scenography</li>
-        <li>/</li>
-        <li>Styling</li>
-        <li>/</li>
-        <li>Creative Photography</li>
-        <li>/</li>
-        <li>Design</li>
+      <!-- лучше делайте стилизацию по классам - лучше переисопльзуемость + проще работать с весами
+       <h2 id="header-biography-name">Katya Mills</h2> -->
+      <h2 class="biography-name">Katya Mills</h2>
+      <p class="post-name">Art Director</p>
+      <ul>
+        <li class="competencies">Scenography</li>
+        <li class="competencies">/</li>
+        <li class="competencies">Styling</li>
+        <li class="competencies">/</li>
+        <li class="competencies">Creative Photography</li>
+        <li class="competencies">/</li>
+        <li class="competencies">Design</li>
       </ul>
       <img src="./img/rectangle.jpg" alt="rectangle" />
       <blockquote>
-        <p id="p-blockquote">“The more I deal with the work as something that is my own, as something that is
+        <p class="davis">“The more I deal with the work as something that is my own, as something that is
           personal, the more
           successfulit is.”</p>
       </blockquote>
@@ -112,8 +116,8 @@
   </main>
   <footer>
     <ul>
-      <li>+7 921 123-45-67</li>
-      <li>info@modstudio.com</li>
+      <li class="footer-controls">+7 921 123-45-67</li>
+      <li class="footer-controls">info@modstudio.com</li>
     </ul>
     <ul>
       <li><a hreh="#" alt="VK"><img src="./img/icon-vk-white.jpg" alt="icon-vk-white" /></a></li>
