@@ -1,0 +1,40 @@
+/* по кодстайле лучше тут сделать маленькими буками названия папок и шрифтов */
+@font-face {
+  font-family: "playfair display regular";
+  src: local("playfair display regular"),
+    local("playfairdisplay regular"),
+    local("playfairdisplay-regular"),
+    url("../fonts/playfair-display/playfairdisplay-regular.ttf");
+}
+
+@font-face {
+  font-family: "playfair display semibold";
+  src: local("playfair display semibold"),
+    local("playfairdisplay semibold"),
+    local("playfairdisplay-semibold"),
+    url("../fonts/playfair-display/playfairdisplay-semibold.ttf");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: local("roboto regular"),
+    local("roboto-regular"),
+    url("../fonts/roboto/roboto-regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: local("roboto bold"),
+    local("roboto-bold"),
+    url("../fonts/roboto/roboto-bold.ttf");
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: "bitter";
+  src: local("bitter"),
+    url("../fonts/bitter/bitter-regular.ttf");
+  font-weight: normal;
+}
