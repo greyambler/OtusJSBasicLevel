@@ -10,7 +10,7 @@ todo: Если удрать * в body, то строчки наползают д
 body {
   font-family: "roboto", serif;
   font-weight: normal;
-  line-height: 100%;
+  /* line-height: 100%; */
   /* леттер спейсинг 0% можно не указывать
   letter-spacing: 0%; */
   color: #000000;
@@ -92,13 +92,16 @@ li {
 /* footer */
 /* здесь тоже лучше упростить до классов
 footer>ul>li  */
+footer {
+  /* задайте фон в футере */
+  background-color: #0D0D0D;
+}
+
 .footer-controls {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
-  /* задайте фон в футере */
-  background-color: #0D0D0D;
 }
 
 /* footer */
