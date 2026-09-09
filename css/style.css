@@ -34,28 +34,60 @@ a {
   margin: 59px auto;
 }
 
+.katya-mills-dune {
+  width: 571px;
+  height: 840px;
+}
+
 h2 {
   font-weight: 700;
   font-size: 24px;
 }
 
+.heading-biography {
+  margin: 2px 0;
+}
+
 .biography-name {
   font-family: "playfair display regular";
   font-size: 86px;
+  margin: 36px 0;
 }
 
 .post-name {
   font-size: 18px;
 }
 
-.competencies {
+.competencies,
+.competencies-end {
   font-size: 18px;
+  display: inline-block;
+}
+
+.competencies::after {
+  content: "";
+  width: 2px;
+  height: 18px;
+  background-color: #000000;
+  display: inline-block;
+  transform: translateY(3px) rotate(15deg);
+  margin-left: 5px;
 }
 
 .davis {
   font-family: "bitter";
   font-weight: 400;
   font-size: 26px;
+  margin: 36px 0;
+}
+
+.davis::before {
+  content: "";
+  width: 20px;
+  height: 6px;
+  background-color: #000000;
+  display: block;
+  margin-bottom: 18px;
 }
 
 h3 {
