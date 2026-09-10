@@ -12,6 +12,9 @@ body {
 /* header */
 header {
   padding-left: 20px;
+  /* лучше задавать или верний осттуп или нижний, так как они схлапываются */
+  margin-bottom: 59px;
+  border: 1px solid red;
 }
 
 h1 {
@@ -31,12 +34,18 @@ a {
 /* main */
 .wrp {
   width: 1165px;
-  margin: 59px auto;
+  /* лучше задавать или верний осттуп или нижний, так как они схлапываются 
+  margin: 59px auto;*/
+  margin: 0 auto;
+  margin-bottom: 59px;
+  border: 1px solid red;
 }
 
 .katya-mills-dune {
   width: 571px;
-  height: 840px;
+  /* лучше не делать фикс высоту, при переполнении контентом, он выпадет из блока, лучше используйте min-height
+  height: 840px; */
+  min-height: 840px;
 }
 
 h2 {
