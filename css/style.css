@@ -6,9 +6,16 @@ body {
   font-weight: normal;
   color: #000000;
   background-color: #FFFFFF;
+  width: 1440px;
 }
 
 /* header */
+header {
+  padding-left: 20px;
+  /* лучше задавать или верний осттуп или нижний, так как они схлапываются */
+  margin-bottom: 59px;
+}
+
 h1 {
   font-family: "playfair display semiBold";
   font-weight: 600;
@@ -24,28 +31,70 @@ a {
 /* header */
 
 /* main */
+.wrp {
+  width: 1165px;
+  /* лучше задавать или верний осттуп или нижний, так как они схлапываются 
+  margin: 59px auto;*/
+  margin: 0 auto;
+  margin-bottom: 59px;
+}
+
+.katya-mills-dune {
+  width: 571px;
+  /* лучше не делать фикс высоту, при переполнении контентом, он выпадет из блока, лучше используйте min-height
+  height: 840px; */
+  min-height: 840px;
+}
+
 h2 {
   font-weight: 700;
   font-size: 24px;
 }
 
+.heading-biography {
+  margin: 2px 0;
+}
+
 .biography-name {
   font-family: "playfair display regular";
   font-size: 86px;
+  margin: 36px 0;
 }
 
 .post-name {
   font-size: 18px;
 }
 
-.competencies {
+.competencies,
+.competencies-end {
   font-size: 18px;
+  display: inline-block;
+}
+
+.competencies::after {
+  content: "";
+  width: 2px;
+  height: 18px;
+  background-color: #000000;
+  display: inline-block;
+  transform: translateY(3px) rotate(15deg);
+  margin-left: 5px;
 }
 
 .davis {
   font-family: "bitter";
   font-weight: 400;
   font-size: 26px;
+  margin: 36px 0;
+}
+
+.davis::before {
+  content: "";
+  width: 20px;
+  height: 6px;
+  background-color: #000000;
+  display: block;
+  margin-bottom: 18px;
 }
 
 h3 {
@@ -73,6 +122,7 @@ li {
 /* footer */
 footer {
   background-color: #0D0D0D;
+  padding: 70px 20px;
 }
 
 .footer-controls {
