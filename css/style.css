@@ -11,8 +11,12 @@ body {
 
 /* header */
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 20px;
   margin-bottom: 59px;
+  gap: 20px;
 }
 
 h1 {
@@ -20,6 +24,19 @@ h1 {
   font-weight: 600;
   font-size: 86px;
   line-height: 120%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.head-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
 }
 
 a {
@@ -116,6 +133,9 @@ li {
 
 /* footer */
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #0D0D0D;
   padding: 70px 20px;
 }
@@ -125,6 +145,13 @@ footer {
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 /* footer */
