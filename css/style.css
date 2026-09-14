@@ -92,12 +92,14 @@ h2 {
 
 .post-name {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .competencies,
 .competencies-end {
   font-size: 18px;
   display: inline-block;
+  font-weight: bold;
 }
 
 .competencies::after {
@@ -161,6 +163,11 @@ h2 {
   width: 100%;
   object-fit: cover;
   margin-bottom: 16px;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .item2 {
