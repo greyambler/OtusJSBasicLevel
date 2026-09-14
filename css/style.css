@@ -234,6 +234,7 @@ footer {
   align-items: center;
   background-color: #0D0D0D;
   padding: 70px 20px;
+  margin-top: 98px;
 }
 
 .footer-controls {
@@ -247,7 +248,9 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 25px;
+  margin-left: 120px;
 }
 
 /* footer */
