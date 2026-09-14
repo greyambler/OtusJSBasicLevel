@@ -7,6 +7,7 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   max-width: 1440px;
+  max-height: 2597px;
 }
 
 /* header */
@@ -14,6 +15,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1400px;
+  height: 135px;
   padding-left: 20px;
   margin-bottom: 59px;
   gap: 20px;
@@ -30,7 +33,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 22px;
 }
 
 .head-menu {
@@ -46,18 +49,12 @@ a {
 
 /* header */
 /* main */
-.wrp-biography,
-.wrp {
-  width: 80%;
-  max-width: 1165px;
-  margin: 0 auto;
-  margin-bottom: 59px;
-}
-
 .wrp-biography {
   display: flex;
   justify-content: space-between;
-  min-height: 840px;
+  max-width: 1165px;
+  margin: 0 auto;
+  margin-bottom: 59px;
 }
 
 .katya-mills-dune {
@@ -66,18 +63,20 @@ a {
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 24px;
 }
 
-.biography-heading {
-  margin: 2px 0;
-  width: 10%;
+.biography-heading-shell {
+  max-width: 132px;
 }
 
-/* width: 455px; */
+.biography-heading {
+  transform: translateY(42px) translateX(-28px) rotate(-90deg);
+}
+
 .biography-text {
-  width: 39%;
+  width: 452px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,6 +86,8 @@ h2 {
   font-family: "playfair display regular";
   font-size: 86px;
   margin: 36px 0;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
 .post-name {
@@ -113,7 +114,7 @@ h2 {
   font-family: "bitter";
   font-weight: 400;
   font-size: 26px;
-  margin: 36px 0;
+  margin: 34px 0;
 }
 
 .davis::before {
