@@ -6,7 +6,7 @@ body {
   font-weight: normal;
   color: #000000;
   background-color: #FFFFFF;
-  max-width: 2440px;
+  max-width: 1440px;
   max-height: 2597px;
 }
 
@@ -17,6 +17,7 @@ header {
   align-items: center;
   height: 135px;
   padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 59px;
   gap: 20px;
 }
