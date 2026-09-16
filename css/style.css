@@ -56,89 +56,8 @@ a {
 /* main */
 main {
   max-width: 80.90%;
-  /* 1165px; */
   margin: 0 auto;
 }
-
-/* wrp-biography 
-.wrp-biography {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 59px;
-}
-
-.katya-mills-dune {
-  width: 49%;
-  object-fit: cover;
-}
-
-h2 {
-  font-weight: 700px;
-  font-size: 24px;
-}
-
-.biography-heading-shell {
-  max-width: 132px;
-}
-
-.biography-heading {
-  transform: translateY(42px) translateX(-28px) rotate(-90deg);
-}
-
-.biography-text {
-  width: 454px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.biography-name {
-  font-family: "playfair display regular";
-  font-size: 86px;
-  margin: 36px 0;
-  flex-wrap: wrap;
-  width: 80%;
-}
-
-.post-name {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.competencies,
-.competencies-end {
-  font-size: 18px;
-  display: inline-block;
-  font-weight: bold;
-}
-
-.competencies::after {
-  content: "";
-  width: 2px;
-  height: 18px;
-  background-color: #000000;
-  display: inline-block;
-  transform: translateY(3px) rotate(15deg);
-  margin-left: 5px;
-}
-
-.davis {
-  font-family: "bitter";
-  font-weight: 400;
-  font-size: 26px;
-  margin: 34px 0;
-}
-
-.davis::before {
-  content: "";
-  width: 20px;
-  height: 6px;
-  background-color: #000000;
-  display: block;
-  margin-bottom: 18px;
-}
-
-wrp-biography */
 
 .wrp-biography {
   display: grid;
@@ -321,34 +240,6 @@ li {
 }
 
 /* main */
-
-/* footer 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0D0D0D;
-  padding: 70px 20px;
-  margin-top: 82px;
-}
-
-.footer-controls {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-
-.social-networks {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  margin-left: 90px;
-}
- footer */
 
 footer {
   display: grid;
