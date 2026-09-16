@@ -6,7 +6,7 @@ body {
   font-weight: normal;
   color: #000000;
   background-color: #FFFFFF;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   max-height: 2597px;
 }
 
@@ -56,29 +56,45 @@ a {
 /* main */
 main {
   max-width: 80.90%;
+  max-width: 1165px;
   margin: 0 auto;
 }
 
 .wrp-biography {
-  display: grid;
-  grid-template-columns: 49% 12% 39%;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 59px;
 }
 
+.katya-mills-dune {
+  width: 49%;
+  object-fit: cover;
+}
+
+h2 {
+  font-weight: 700px;
+  font-size: 24px;
+}
+
+.biography-heading-shell {
+  max-width: 132px;
+}
+
 .biography-heading {
-  transform: translateY(27px) translateX(-25px) rotate(-90deg);
+  transform: translateY(42px) translateX(-28px) rotate(-90deg);
 }
 
 .biography-text {
+  width: 454px;
   display: flex;
   flex-direction: column;
-  padding-top: 175px;
-  gap: 34px;
+  justify-content: center;
 }
 
 .biography-name {
   font-family: "playfair display regular";
   font-size: 86px;
+  margin: 36px 0;
   flex-wrap: wrap;
   width: 80%;
 }
@@ -101,14 +117,15 @@ main {
   height: 18px;
   background-color: #000000;
   display: inline-block;
-  transform: translateY(2px) rotate(14deg);
-  margin: 0 5px;
+  transform: translateY(3px) rotate(15deg);
+  margin-left: 5px;
 }
 
 .davis {
   font-family: "bitter";
   font-weight: 400;
   font-size: 26px;
+  margin: 34px 0;
 }
 
 .davis::before {
