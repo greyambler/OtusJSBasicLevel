@@ -56,6 +56,7 @@ main {
   margin: 0 auto;
 }
 
+/* wrp-biography 
 .wrp-biography {
   display: flex;
   justify-content: space-between;
@@ -122,6 +123,69 @@ h2 {
   font-weight: 400;
   font-size: 26px;
   margin: 34px 0;
+}
+
+.davis::before {
+  content: "";
+  width: 20px;
+  height: 6px;
+  background-color: #000000;
+  display: block;
+  margin-bottom: 18px;
+}
+
+wrp-biography */
+
+.wrp-biography {
+  display: grid;
+  grid-template-columns: 49% 12% 39%;
+  margin-bottom: 59px;
+}
+
+.biography-heading {
+  transform: translateY(27px) translateX(-25px) rotate(-90deg);
+}
+
+.biography-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 175px;
+  gap: 34px;
+}
+
+.biography-name {
+  font-family: "playfair display regular";
+  font-size: 86px;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.post-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.competencies,
+.competencies-end {
+  font-size: 18px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.competencies::after {
+  content: "";
+  width: 2px;
+  height: 18px;
+  background-color: #000000;
+  display: inline-block;
+  transform: translateY(2px) rotate(14deg);
+  margin: 0 5px;
+}
+
+.davis {
+  font-family: "bitter";
+  font-weight: 400;
+  font-size: 26px;
 }
 
 .davis::before {
@@ -313,6 +377,17 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  body {
+    max-width: 768px;
+    max-height: 2980px;
+  }
+
+  header {
+    height: 82px;
+  }
+
+  /*footer*/
   footer {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
@@ -337,4 +412,11 @@ footer {
     justify-self: end;
     align-self: center;
   }
+
+  /*footer*/
 }
+
+/* 
+* {
+  outline: 1px solid red;
+} */
