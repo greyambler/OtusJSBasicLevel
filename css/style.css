@@ -29,6 +29,10 @@ h1 {
   line-height: 120%;
 }
 
+.min-naviget-panel {
+  display: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -385,7 +389,48 @@ footer {
 
   header {
     height: 82px;
+    padding-left: 10px;
+    padding-right: 30px;
+
   }
+
+  h1,
+  .naviget-panel {
+    display: none;
+  }
+
+  .min-naviget-panel {
+    width: 100%;
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    gap: none;
+  }
+
+  .head-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 126px;
+  }
+
+  .button-href {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 92px;
+    height: 82px;
+  }
+
+  a {
+    font-size: 40px;
+    text-decoration: none;
+  }
+
 
   /*footer*/
   footer {
