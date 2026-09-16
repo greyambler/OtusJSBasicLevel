@@ -6,13 +6,20 @@ body {
   font-weight: normal;
   color: #000000;
   background-color: #FFFFFF;
-  width: 1440px;
+  max-width: 1440px;
+  max-height: 2597px;
 }
 
 /* header */
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 135px;
   padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 59px;
+  gap: 20px;
 }
 
 h1 {
@@ -22,48 +29,81 @@ h1 {
   line-height: 120%;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
+}
+
+.head-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+}
+
 a {
   font-weight: 500;
   font-size: 24px;
+  color: #000000;
 }
 
 /* header */
-
 /* main */
-.wrp {
-  width: 1165px;
+main {
+  max-width: 1165px;
   margin: 0 auto;
+}
+
+.wrp-biography {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 59px;
 }
 
 .katya-mills-dune {
-  width: 571px;
-  min-height: 840px;
+  width: 49%;
+  object-fit: cover;
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 24px;
 }
 
-.heading-biography {
-  margin: 2px 0;
+.biography-heading-shell {
+  max-width: 132px;
+}
+
+.biography-heading {
+  transform: translateY(42px) translateX(-28px) rotate(-90deg);
+}
+
+.biography-text {
+  width: 454px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .biography-name {
   font-family: "playfair display regular";
   font-size: 86px;
   margin: 36px 0;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
 .post-name {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .competencies,
 .competencies-end {
   font-size: 18px;
   display: inline-block;
+  font-weight: bold;
 }
 
 .competencies::after {
@@ -80,7 +120,7 @@ h2 {
   font-family: "bitter";
   font-weight: 400;
   font-size: 26px;
-  margin: 36px 0;
+  margin: 34px 0;
 }
 
 .davis::before {
@@ -90,6 +130,59 @@ h2 {
   background-color: #000000;
   display: block;
   margin-bottom: 18px;
+}
+
+/* wrp */
+.wrp {
+  max-height: 1236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+.designers-heading {
+  padding-left: 119px;
+  padding-bottom: 45px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  column-gap: 12px;
+  row-gap: 30px;
+}
+
+.designer-item:nth-child(4n+1) {
+  grid-column: span 2;
+  justify-items: start;
+}
+
+.designer-item:nth-child(4n+4) {
+  grid-column: span 2;
+  padding-right: 12px;
+  justify-items: end;
+}
+
+.jess-wonder {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.kameron-clein {
+  margin-bottom: 20px;
+}
+
+.louisse-red-coffee {
+  margin-bottom: 20px;
+}
+
+.jess-wonder-end {
+  justify-items: end;
 }
 
 h3 {
@@ -107,17 +200,55 @@ span {
   font-size: 16px;
 }
 
+.skills {
+  display: flex;
+}
+
+span::after {
+  content: "";
+  width: 2px;
+  height: 18px;
+  background-color: #000000;
+  display: inline-block;
+  transform: translateY(3px) rotate(15deg);
+  margin: 0 5px;
+}
+
 li {
   font-weight: normal;
   font-size: 16px;
 }
 
+.designer-competencies,
+.designer-competencies-end {
+  font-size: 16px;
+  display: inline-block;
+  font-weight: normal;
+
+}
+
+.designer-competencies::after {
+  content: "";
+  width: 2px;
+  height: 16px;
+  background-color: #000000;
+  display: inline-block;
+  font-weight: normal;
+  transform: translateY(3px) rotate(15deg);
+  margin-left: 5px;
+}
+
+
 /* main */
 
 /* footer */
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #0D0D0D;
   padding: 70px 20px;
+  margin-top: 82px;
 }
 
 .footer-controls {
@@ -125,6 +256,16 @@ footer {
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-left: 120px;
 }
 
 /* footer */
