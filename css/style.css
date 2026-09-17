@@ -29,7 +29,9 @@ h1 {
   line-height: 120%;
 }
 
-.min-naviget-panel {
+.min-naviget-panel,
+.min-wrp-biography,
+.min-wrp {
   display: none;
 }
 
@@ -289,21 +291,22 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   body {
     max-width: 768px;
     max-height: 2980px;
   }
 
+  /* header */
   header {
     height: 82px;
-    padding-left: 10px;
-    padding-right: 30px;
-
+    padding-left: 14px;
+    padding-right: 34px;
   }
 
   h1,
-  .naviget-panel {
+  .naviget-panel,
+  .wrp-biography,
+  .wrp {
     display: none;
   }
 
@@ -329,7 +332,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 92px;
     height: 82px;
   }
@@ -339,12 +341,145 @@ footer {
     text-decoration: none;
   }
 
+  /* header */
+
+  /* min-wrp-biography*/
+  .min-wrp-biography {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    gap: 22px;
+  }
+
+  .min-biography-first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 13px;
+    margin-right: 16px;
+  }
+
+  .min-post-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .min-competencies {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+
+  .min-biography-heading {
+    font-size: 18px;
+  }
+
+  blockquote {
+    margin-left: 14px;
+    margin-top: 34px;
+    margin-bottom: 100px;
+  }
+
+  .min-davis {
+    font-family: "bitter";
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .min-biography-name {
+    font-family: "playfair display regular";
+    font-size: 64px;
+    width: 80%;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  .min-biography-name_22::before {
+    content: "";
+    width: 20px;
+    height: 6px;
+    background-color: #000000;
+    display: inline-block;
+    margin-bottom: 18px;
+  }
+
+  .min-katya-mills-dune {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  /* min-wrp-biography*/
+
+  /* wrp */
+  .min-wrp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .min-designers-heading {
+    padding-left: 119px;
+    padding-bottom: 33px;
+  }
+
+  .min-all-designer {
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+    margin-right: 29px;
+    max-height: 1474px;
+  }
+
+  .min-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+
+  .min-text-start {
+    margin-top: 36px;
+    margin-left: 29px;
+    grid-column: 1/3;
+  }
+
+  .min-text-end {
+    margin-top: 36px;
+    margin-left: 45px;
+    grid-column-start: 2;
+    grid-column: span 2;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .min-img-start,
+  .min-img-end {
+    grid-column: 1;
+    /* max-width: 258px; */
+    max-height: 313px;
+  }
+
+  .min-img-end {
+    grid-column: 3;
+    margin-right: 20px;
+  }
+
+  /* wrp */
 
   /*footer*/
   footer {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
     row-gap: 8px;
+    max-height: 174px;
+    padding: 30px 16px;
+    margin-top: 100px;
   }
 
   footer:nth-child(odd) {
@@ -368,8 +503,3 @@ footer {
 
   /*footer*/
 }
-
-/* 
-* {
-  outline: 1px solid red;
-} */
