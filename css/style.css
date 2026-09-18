@@ -20,7 +20,6 @@ header {
   padding-right: 20px;
   margin-bottom: 59px;
   gap: 20px;
-  outline: 2px solid red;
 }
 
 h1 {
@@ -30,8 +29,8 @@ h1 {
   line-height: 120%;
 }
 
-.min-wrp-biography,
-.min-wrp,
+/* .min-wrp-biography, */
+/* .min-wrp, */
 .button-href {
   display: none;
 }
@@ -41,12 +40,14 @@ nav {
   flex-direction: row;
   align-items: center;
   gap: 22px;
+  /* outline: 20px solid black; */
 }
 
 .head-menu {
   display: flex;
   flex-direction: row;
   gap: 55px;
+  /* outline: 20px solid black; */
 }
 
 /* a, */
@@ -295,6 +296,61 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  h1,
+  .item-href {
+    display: none;
+  }
+
+  body {
+    max-width: 768px;
+    max-height: 2980px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  /* header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    gap: 0;
+  }
+
+  nav {
+    width: 100%;
+    gap: none;
+    padding-left: 16px;
+    padding-right: 22px;
+  }
+
+  .head-menu {
+    width: calc(100% - 11.58%);
+    display: flex;
+    flex-direction: row;
+    gap: 124px;
+  }
+
+  .button-href {
+    font-size: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    width: 92px;
+    height: 82px;
+  }
+
+  /* header */
+}
+
+@media (max-width: 18px) {
   body {
     max-width: 768px;
     max-height: 2980px;
