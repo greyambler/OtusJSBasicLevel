@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript-разработчик. Базовый уровень</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -13,13 +14,16 @@
     <nav>
       <ul class="head-menu">
         <li>
-          <a href="#">Designers</a>
+          <a href="#" class="button-href">D</a>
+          <a href="#" class="item-href">Designers</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#" class="button-href">A</a>
+          <a href="#" class="item-href">About</a>
         </li>
         <li>
-          <a href="#">Contacts</a>
+          <a href="#" class="button-href">C</a>
+          <a href="#" class="item-href">Contacts</a>
         </li>
       </ul>
       <img src="./img/icon-message.jpg" alt="icon-message" />
@@ -33,13 +37,15 @@
       </div>
       <div class="biography-text">
         <h2 class="biography-name">Katya Mills</h2>
-        <p class="post-name">Art Director</p>
-        <ul>
-          <li class="competencies">Scenography</li>
-          <li class="competencies">Styling</li>
-          <li class="competencies">Creative Photography</li>
-          <li class="competencies-end">Design</li>
-        </ul>
+        <div>
+          <p class="post-name">Art Director</p>
+          <ul>
+            <li class="competencies">Scenography</li>
+            <li class="competencies">Styling</li>
+            <li class="competencies">Creative Photography</li>
+            <li class="competencies-end">Design</li>
+          </ul>
+        </div>
         <blockquote>
           <p class="davis">“The more I deal with the work as something that is my own, as something that is
             personal, the more
@@ -108,18 +114,115 @@
         </li>
       </ul>
     </section>
+    <section class="colomn-wrp-biography" title="Biography">
+      <div class="colomn-biography-text">
+        <ul class="competencies">
+          <li>Art Director</li>
+          <li>- Scenography</li>
+          <li>- Styling</li>
+          <li>- Creative Photography</li>
+          <li>- Design</li>
+        </ul>
+        <h2>Biography</h2>
+      </div>
+      <blockquote>
+        <p class="colomn-davis">“The more I deal with</p>
+        <p class="colomn-davis">the work as something that is my own,</p>
+        <p class="colomn-davis">as something that</p>
+        <p class="colomn-davis">is personal, the more successful it is.”</p>
+      </blockquote>
+      <h2 class="colomn-biography-name">-Katya Mills</h2>
+      <img class="colomn-katya-mills-dune" src="./img/katya-mills-dune.jpg" alt="katya-mills-dune" />
+    </section>
+    <section class="colomn-wrp" title="Designers">
+      <h2 class="colomn-designers-heading">Designers</h2>
+      <ul class="cards">
+        <li>
+          <article class="colomn-card-first">
+            <img src="./img/min-jess-wonder-punpon.jpg" alt="colomn-jess-wonder-punpon" />
+            <div class="colomn-text-card-first">
+              <h3>Jess Wonder</h3>
+              <div class="from-skills">
+                <p><span>From</span>Be more flower</p>
+                <div class="skills">
+                  <span>Skills</span>
+                  <ul>
+                    <li class="designer-competencies">Design Strategy</li>
+                    <li class="designer-competencies-end">Marketing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="colomn-card-second">
+            <div class="colomn-text-card-second">
+              <h3>Kameron Clein</h3>
+              <div class="from-skills">
+                <p><span>From</span>Be more flower</p>
+                <div class="skills">
+                  <span>Skills</span>
+                  <ul>
+                    <li class="designer-competencies">Design Strategy</li>
+                    <li class="designer-competencies-end">Marketing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <img class="colomn-card-img" src="./img/min-kameron-clein-folder.jpg" alt="colomn-kameron-clein-folder" />
+          </article>
+        </li>
+        <li>
+          <article class="colomn-card-first">
+            <img src="./img/min-louisse-red-coffee-book.jpg" alt="colomn-louisse-red-coffee-book" />
+            <div class="colomn-text-card-first">
+              <h3>Louisse Red</h3>
+              <div class="from-skills">
+                <p><span>From</span>Be more flower</p>
+                <div class="skills">
+                  <span>Skills</span>
+                  <ul>
+                    <li class="designer-competencies">Design Strategy</li>
+                    <li class="designer-competencies-end">Marketing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="colomn-card-second">
+            <div class="colomn-text-card-second">
+              <h3>Kameron Clein</h3>
+              <div class="from-skills">
+                <p><span>From</span>Be more flower</p>
+                <div class="skills">
+                  <span>Skills</span>
+                  <ul>
+                    <li class="designer-competencies">Design Strategy</li>
+                    <li class="designer-competencies-end">Marketing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <img class="colomn-card-img" src="./img/min-jess-wonder-punpon.jpg" alt="colomn-jess-wonder-punpon" />
+          </article>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer>
-    <ul>
-      <li class="footer-controls">+7 921 123-45-67</li>
-      <li class="footer-controls">info@modstudio.com</li>
+    <ul class="footer-controls">
+      <li>+7 921 123-45-67</li>
+      <li>info@modstudio.com</li>
     </ul>
     <ul class="social-networks">
       <li><a hreh="#" alt="VK"><img src="./img/icon-vk-white.jpg" alt="icon-vk-white" /></a></li>
       <li><a hreh="#" alt="pinterest"><img src="./img/icon-pinterest-white.jpg" alt="icon-pinterest-white" /></a></li>
       <li><a hreh="#" alt="ball"><img src="./img/icon-ball-white.jpg" alt="icon-pinterest-white" /></a></li>
     </ul>
-    <img src="./img/icon-stamp-white.jpg" alt="icon-trademark-white" />
+    <img class="icon-trademark-white" src="./img/icon-stamp-white.jpg" alt="icon-trademark-white" />
   </footer>
 </body>
 
