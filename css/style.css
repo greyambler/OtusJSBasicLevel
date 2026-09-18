@@ -264,7 +264,7 @@ li {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 1fr);
   background-color: #0D0D0D;
   padding: 70px 20px;
   margin-top: 94px;
