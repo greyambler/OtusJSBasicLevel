@@ -2,8 +2,8 @@
 @import "./fonts.css";
 
 .button-href,
-.min-wrp-biography,
-.min-wrp {
+.colomn-wrp-biography,
+.colomn-wrp {
   display: none;
 }
 
@@ -354,8 +354,8 @@ footer {
     margin: 0;
   }
 
-  /* min-wrp-biography */
-  .min-wrp-biography {
+  /* colomn-wrp-biography */
+  .colomn-wrp-biography {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -363,7 +363,7 @@ footer {
     margin-bottom: 80px;
   }
 
-  .min-biography-text {
+  .colomn-biography-text {
     display: flex;
     justify-content: space-between;
     padding: 0 16px 0 14px;
@@ -381,14 +381,14 @@ footer {
     font-size: 18px;
   }
 
-  .min-davis {
+  .colomn-davis {
     font-family: "bitter";
     font-size: 30px;
     font-weight: 300;
     padding: 0 14px;
   }
 
-  .min-biography-name {
+  .colomn-biography-name {
     font-family: "playfair display regular";
     font-size: 64px;
     width: 80%;
@@ -396,20 +396,20 @@ footer {
     padding: 125px 14px 33px 14px;
   }
 
-  .min-katya-mills-dune {
+  .colomn-katya-mills-dune {
     height: 42%;
     max-height: 400px;
     object-fit: cover;
   }
 
-  /* min-wrp-biography */
-  /* min-wrp */
-  .min-wrp {
+  /* colomn-wrp-biography */
+  /* colomn-wrp */
+  .colomn-wrp {
     display: block;
     height: 1533px;
   }
 
-  .min-designers-heading {
+  .colomn-designers-heading {
     font-size: 24px;
     padding-left: 119px;
     padding-bottom: 30px;
@@ -421,27 +421,27 @@ footer {
     gap: 74px;
   }
 
-  .min-card-first {
+  .colomn-card-first {
     display: flex;
   }
 
-  .min-text-card-first {
+  .colomn-text-card-first {
     margin-left: 29px;
     margin-top: 45px;
   }
 
-  .min-card-second {
+  .colomn-card-second {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin: 0 32px;
   }
 
-  .min-text-card-second {
+  .colomn-text-card-second {
     margin-top: 44px;
   }
 
-  .min-card-img {
+  .colomn-card-img {
     justify-self: end;
   }
 
@@ -455,7 +455,7 @@ footer {
     line-height: 45%;
   }
 
-  /* min-wrp */
+  /* colomn-wrp */
   /* main */
 
   /*footer*/
