@@ -1,12 +1,18 @@
 @import "./reset.css";
 @import "./fonts.css";
 
+.button-href,
+.min-wrp-biography,
+.min-wrp {
+  display: none;
+}
+
 body {
   font-family: "roboto", serif;
   font-weight: normal;
   color: #000000;
   background-color: #FFFFFF;
-  /* max-width: 1440px; */
+  max-width: 1440px;
   max-height: 2597px;
 }
 
@@ -29,28 +35,19 @@ h1 {
   line-height: 120%;
 }
 
-/* .min-wrp-biography, */
-/* .min-wrp, */
-.button-href {
-  display: none;
-}
-
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 22px;
-  /* outline: 20px solid black; */
 }
 
 .head-menu {
   display: flex;
   flex-direction: row;
   gap: 55px;
-  /* outline: 20px solid black; */
 }
 
-/* a, */
 .item-href {
   font-weight: 500;
   font-size: 24px;
@@ -298,7 +295,10 @@ footer {
 @media (max-width: 768px) {
 
   h1,
-  .item-href {
+  .item-href,
+  .wrp-biography,
+  .competencies::after,
+  .wrp {
     display: none;
   }
 
@@ -348,105 +348,44 @@ footer {
   }
 
   /* header */
-}
-
-@media (max-width: 18px) {
-  body {
-    max-width: 768px;
-    max-height: 2980px;
-  }
-
-  /* header */
-  header {
-    height: 82px;
-    padding-left: 14px;
-    padding-right: 34px;
-    outline: 2px solid red;
-  }
-
-  h1,
-  .item-href,
-  .wrp-biography,
-  .wrp {
-    display: none;
-  }
-
-  nav {
+  /* main */
+  main {
     width: 100%;
-    gap: none;
+    margin: 0;
   }
 
-  .head-menu {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 126px;
-  }
-
-  .button-href {
-    font-size: 40px;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    width: 92px;
-    height: 82px;
-  }
-
-  /* a {
-    font-size: 40px;
-    text-decoration: none;
-  } */
-
-  /* header */
-
-  /* min-wrp-biography*/
+  /* min-wrp-biography */
   .min-wrp-biography {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    height: 951px;
     margin-bottom: 80px;
-    gap: 22px;
   }
 
-  .min-biography-first-row {
+  .min-biography-text {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-left: 13px;
-    margin-right: 16px;
+    padding: 0 16px 0 14px;
+    padding-bottom: 60px;
   }
 
-  .min-post-name {
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .min-competencies {
-    font-size: 18px;
+  .competencies {
     display: flex;
     flex-direction: column;
-    font-weight: bold;
+    line-height: 116%;
   }
 
-  .min-biography-heading {
+  h2 {
+    font-weight: 700px;
     font-size: 18px;
-  }
-
-  blockquote {
-    margin-left: 14px;
-    margin-top: 34px;
-    margin-bottom: 100px;
   }
 
   .min-davis {
     font-family: "bitter";
     font-size: 30px;
     font-weight: 300;
+    padding: 0 14px;
   }
 
   .min-biography-name {
@@ -454,80 +393,70 @@ footer {
     font-size: 64px;
     width: 80%;
     font-weight: 400;
-    margin-bottom: 12px;
-  }
-
-  .min-biography-name_22::before {
-    content: "";
-    width: 20px;
-    height: 6px;
-    background-color: #000000;
-    display: inline-block;
-    margin-bottom: 18px;
+    padding: 125px 14px 33px 14px;
   }
 
   .min-katya-mills-dune {
-    height: 400px;
+    height: 42%;
+    max-height: 400px;
     object-fit: cover;
   }
 
-  /* min-wrp-biography*/
-
-  /* wrp */
+  /* min-wrp-biography */
+  /* min-wrp */
   .min-wrp {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
+    height: 1533px;
   }
 
   .min-designers-heading {
+    font-size: 24px;
     padding-left: 119px;
-    padding-bottom: 33px;
+    padding-bottom: 30px;
   }
 
-  .min-all-designer {
+  .cards {
     display: flex;
     flex-direction: column;
     gap: 74px;
-    margin-right: 29px;
-    max-height: 1474px;
-    width: 100%;
   }
 
-  .min-container {
-    display: grid;
-    width: 100%;
-    height: 313px;
-    grid-template-areas:
-      "min-img-start min-text-end min-text-end"
-      "min-text-start min-text-start min-img-end"
-      "min-img-start min-text-end min-text-end"
-      "min-img-start min-img-start min-text-end";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+  .min-card-first {
+    display: flex;
   }
 
-  .min-text-start,
-  .min-text-end {
-    grid-column: span 2;
-    margin-top: 36px;
+  .min-text-card-first {
     margin-left: 29px;
-    z-index: 10;
+    margin-top: 45px;
   }
 
-  .min-img-end {
-    grid-column: 3;
-    align-items: start;
-    padding-right: 20px;
+  .min-card-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 32px;
+  }
+
+  .min-text-card-second {
+    margin-top: 44px;
+  }
+
+  .min-card-img {
+    justify-self: end;
   }
 
   h3 {
     font-weight: 700;
     font-size: 24px;
+    line-height: 80%;
   }
 
-  /* wrp */
+  .from-skills {
+    line-height: 45%;
+  }
+
+  /* min-wrp */
+  /* main */
 
   /*footer*/
   footer {
