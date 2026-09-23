@@ -49,14 +49,15 @@
 /* font */
 
 /* * {
-  outline: 1px dotted red;
+  outline: 1px solid purple;
 } */
 
 .text-long,
 .jess-wonder-narrow,
 .kameron-clein-narrow,
 .louisse-red-coffee-narrow,
-.jess-wonder-narrow {
+.jess-wonder-narrow,
+.jess-wonder-narrow-end {
   display: none;
 }
 
@@ -102,13 +103,15 @@ body {
 }
 
 .nav-main {
+  padding-top: 9px;
   width: 100%;
 }
 
 .head-menu {
   display: flex;
   justify-content: flex-end;
-  gap: 55px;
+  gap: 47px;
+  margin-right: 10px;
 }
 
 .item-href,
@@ -153,6 +156,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding-left: 18px;
 }
 
 h2 {
@@ -173,6 +177,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 14px;
 }
 
 .biography-name {
@@ -304,6 +309,7 @@ span {
 
 .skills {
   display: flex;
+  align-items: flex-end;
 }
 
 span::after {
@@ -316,19 +322,20 @@ span::after {
   margin: 0 5px;
 }
 
-li {
+.designer-competencies {
+  display: flex;
+}
+
+.designer-competenciy,
+.designer-competenciy-end {
+  font-size: 16px;
+  display: flex;
+  align-items: flex-end;
   font-weight: normal;
   font-size: 16px;
 }
 
-.designer-competency,
-.designer-competency-end {
-  font-size: 16px;
-  display: inline-block;
-  font-weight: normal;
-}
-
-.designer-competency::after {
+.designer-competenciy::after {
   content: "";
   width: 2px;
   height: 16px;
@@ -336,7 +343,7 @@ li {
   display: inline-block;
   font-weight: normal;
   transform: translateY(3px) rotate(15deg);
-  margin-left: 5px;
+  margin-right: 3px;
 }
 
 /* main */
@@ -348,7 +355,14 @@ footer {
   align-items: center;
   background-color: #0D0D0D;
   padding: 70px 20px;
-  margin-top: 82px;
+  margin-top: 94px;
+}
+
+.footer-data {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-control {
@@ -369,7 +383,7 @@ footer {
 }
 
 .footer-trademark {
-  text-wrap: true;
+  text-wrap: wrap;
   color: #FFF;
 }
 
@@ -387,9 +401,29 @@ footer {
     display: none;
   }
 
+  .header-main {
+    height: 75px;
+    margin-bottom: 25px;
+  }
+
+  .head-menu {
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 35px;
+  }
+
+  .item-href {
+    font-size: 40px;
+  }
+
+  .item-href-end {
+    padding-top: 5px;
+  }
+
   /* wrp-biography */
   .wrp-biography {
     flex-direction: column-reverse;
+    margin-bottom: 77px;
   }
 
   .katya-mills-dune {
@@ -398,15 +432,39 @@ footer {
   }
 
   .presentation {
+    align-items: flex-start;
     justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .biography-heading-shell {
+    order: 2;
+    width: 100%
+  }
+
+  .biography-heading {
+    font-size: 18px;
+    height: 38px;
+    padding-top: 4px;
+    padding-left: 33px;
+    transform: none;
+  }
+
+
+  .biography-text {
+    max-width: 100%;
+    padding-top: 4px;
+    flex-direction: column-reverse;
+    font-size: 18px;
+    margin-left: 12px;
   }
 
   .competencies {
     order: 1;
     width: 100%;
-    width: 220px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 19px;
   }
 
   .competency,
@@ -419,10 +477,10 @@ footer {
   .competency::before,
   .competency-end::before {
     content: "";
-    width: 10px;
+    width: 6px;
     height: 3px;
     background-color: #000000;
-    margin-left: 5px;
+    /* margin-left: 5px; */
   }
 
   .post-name::before {
@@ -430,60 +488,80 @@ footer {
     width: 12px;
     height: 4px;
     background-color: #000000;
-    margin-left: 5px;
-  }
-
-  .biography-heading-shell {
-    order: 2;
   }
 
   .davis {
     order: 3;
-  }
-
-  .biography-heading {
-    transform: none;
-  }
-
-  .biography-text {
-    flex-direction: column-reverse;
-    width: 70%;
+    font-size: 30px;
+    margin-bottom: 88px;
   }
 
   .biography-name {
-    width: 100%;
+    width: 90%;
     font-size: 64px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    padding-left: 10px;
   }
 
   .biography-name::before {
     content: "";
-    width: 12px;
+    width: 24px;
     height: 4px;
     background-color: #000000;
-    margin-left: 5px;
   }
 
   /* wrp-biography */
 
   /* wrp */
+  /* .wrp {
+    outline: 2px solid red;
+  } */
+
+  .designers-heading {
+    padding-bottom: 31px;
+  }
+
   .container {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    gap: 74px
   }
 
   .jess-wonder-narrow,
   .kameron-clein-narrow,
   .louisse-red-coffee-narrow,
-  .jess-wonder-narrow {
-    display: block;
-    width: 35%;
+  .jess-wonder-narrow-end {
+    display: flex;
+    width: 45%;
+    height: 313px;
     object-fit: contain;
+  }
+
+  .kameron-clein-narrow,
+  .jess-wonder-narrow-end {
+    padding-right: 32px;
+  }
+
+  .colomn-card-first {
+    width: 100%;
+    display: flex;
+    padding-left: 17px;
+  }
+
+  .designer-presentation {
+    padding-top: 40px;
+    padding-left: 30px;
+    width: 100%;
+  }
+
+  .name-designer {
+    font-size: 24px;
+    font-weight: bold;
   }
 
   .colomn-card-second {
@@ -491,11 +569,6 @@ footer {
     grid-column: 1;
     display: flex;
     flex-direction: row-reverse;
-  }
-
-  .colomn-card-first {
-    width: 100%;
-    display: flex;
   }
 
   .designer-item:nth-child(odd) {
@@ -508,12 +581,22 @@ footer {
     justify-items: start;
   }
 
+  .designer-item {
+    width: 100%;
+  }
+
   /* wrp */
 
   /* footer */
   footer {
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 174px;
   }
 
   .footer-data {
@@ -527,10 +610,19 @@ footer {
     order: 1;
   }
 
+  .footer-control {
+    font-size: 16px;
+  }
+
+  .social-networks {
+    padding-top: 33px;
+  }
+
   .footer-trademark {
     order: 2;
-    text-wrap: true;
+    text-wrap: wrap;
     color: #FFF;
+    font-size: 16px;
   }
 
   /* footer */
