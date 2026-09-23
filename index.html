@@ -3,286 +3,124 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript-разработчик. Базовый уровень</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <!-- Это не проверять сейчас
-  это для следующего задания
-  если войму в чем проблема с этим 
-
-  <dialog class="underlayer">
-    <form action="#" method="get" class="main-dialog">
-      <div class="shell">
-        <h4 class="title-dialog">Get in touch</h4>
-        <p class="description-dialog">Do you have any questions? Have something to say?
-          Don't be shy, write to us:</p>
-        <ul class="row-data">
-          <li class="name-field">
-            Name
-          </li>
-          <li>
-            <input type="text" name="name" class="data-name" placeholder="3+ Characters" />
-          </li>
-        </ul>
-        <ul class="row-data">
-          <li class="name-field">E-mail</li>
-          <li>
-            <input type="text" name="mail" class="data-mail" placeholder="name@email.com" />
-          </li>
-        </ul>
-        <ul class="row-comment">
-          <li class="name-field">Comment</li>
-          <li>
-            <textarea id="comment" name="comment" rows="6" cols="40" placeholder="Some text..."></textarea>
-          </li>
-        </ul>
-        <div class="buttons-panel">
-          <button class="btn-reset" type="reset">Cancel</button>
-          <button class="btn-submit" type="submit">
-            <p class="send-plus">+ &nbsp;</p>Send
-          </button>
-        </div>
+  <header>
+    <h1>Mod</h1>
+    <nav>
+      <ul class="head-menu">
+        <li>
+          <a href="#">Designers</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contacts</a>
+        </li>
+      </ul>
+      <img src="./img/icon-message.jpg" alt="icon-message" />
+    </nav>
+  </header>
+  <main>
+    <section class="wrp-biography" title="Biography">
+      <img class="katya-mills-dune" src="./img/katya-mills-dune.jpg" alt="katya-mills-dune" />
+      <div class="biography-heading-shell">
+        <h2 class="biography-heading">Biography</h2>
       </div>
-    </form>
-  </dialog>
-  Это не проверять сейчас
-  это для следующего задания
-  если войму в чем проблема с этим -->
-
-  <div class="page-list">
-    <header class="header-main">
-      <h1>Mod</h1>
-      <nav class="nav-main">
-        <ul class="head-menu">
-          <li>
-            <a href="#" class="item-href">
-              <div class="item-href">D
-                <div class="text-long">esigners</div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-href">
-              <div class="item-href">A
-                <div class="text-long">bout</div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-href">
-              <div class="item-href">C
-                <div class="text-long">ontacts</div>
-              </div>
-            </a>
-          </li>
-          <li class="item-href-end">
-            <div class="item-href">
-              <img src="./img/icon-message.svg" alt="icon-message" />
-            </div>
-          </li>
+      <div class="biography-text">
+        <h2 class="biography-name">Katya Mills</h2>
+        <p class="post-name">Art Director</p>
+        <ul>
+          <li class="competencies">Scenography</li>
+          <li class="competencies">Styling</li>
+          <li class="competencies">Creative Photography</li>
+          <li class="competencies-end">Design</li>
         </ul>
-      </nav>
-      <img class="icon-message" src="./img/icon-message.jpg" alt="icon-message" />
-    </header>
-    <main>
-      <section class="wrp-biography" title="Biography">
-        <img class="katya-mills-dune" src="./img/katya-mills-dune.jpg" alt="katya-mills-dune" />
-        <div class="biography-heading-shell">
-          <h2 class="biography-heading">Biography</h2>
-        </div>
-        <div class="biography-text">
-          <h2 class="biography-name">Katya Mills</h2>
-          <p class="post-name">Art Director</p>
-          <ul>
-            <li class="competencies">Scenography</li>
-            <li class="competencies">Styling</li>
-            <li class="competencies">Creative Photography</li>
-            <li class="competencies-end">Design</li>
-          </ul>
-          <blockquote>
-            <p class="davis">“The more I deal with the work as something that is my own, as something that is
-              personal, the more
-              successfulit is.”</p>
-          </blockquote>
-        </div>
-      </section>
-      <section class="wrp" title="Designers">
-        <h2 class="designers-heading">Designers</h2>
-        <ul class="container">
-          <li class="designer-item">
-            <article>
-              <img class="jess-wonder" src="./img/jess-wonder-punpon.jpg" alt="jess-wonder-punpon" />
-              <h3>Jess Wonder</h3>
-              <p><span>From</span>Be more flower</p>
-              <div class="skills">
-                <span>Skills</span>
-                <ul>
-                  <li class="designer-competencies">Design Strategy</li>
-                  <li class="designer-competencies-end">Marketing</li>
-                </ul>
-              </div>
-            </article>
-          </li>
-          <li class="designer-item">
-            <article>
-              <img class="kameron-clein" src="./img/kameron-clein-folder.jpg" alt="kameron-clein-folder" />
-              <h3>Kameron Clein</h3>
-              <p><span>From</span>Be more flower</p>
-              <div class="skills">
-                <span>Skills</span>
-                <ul>
-                  <li class="designer-competencies">Design Strategy</li>
-                  <li class="designer-competencies-end">Marketing</li>
-                </ul>
-              </div>
-            </article>
-          </li>
-          <li class="designer-item">
-            <article>
-              <img class="louisse-red-coffee" src="./img/louisse-red-coffee-book.jpg" alt="louisse-red-coffee-book" />
-              <h3>Louisse Red</h3>
-              <p><span>From</span>Be more flower</p>
-              <div class="skills">
-                <span>Skills</span>
-                <ul>
-                  <li class="designer-competencies">Design Strategy</li>
-                  <li class="designer-competencies-end">Marketing</li>
-                </ul>
-              </div>
-            </article>
-          </li>
-          <li class="designer-item">
-            <article>
-              <img class="jess-wonder" src="./img/jess-wonder-punpon.jpg" alt="jess-wonder-punpon" />
-              <h3>Jess Wonder</h3>
-              <p><span>From</span>Be more flower</p>
-              <div class="skills">
-                <span>Skills</span>
-                <ul>
-                  <li class="designer-competencies">Design Strategy</li>
-                  <li class="designer-competencies-end">Marketing</li>
-                </ul>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <section class="colomn-wrp-biography" title="Biography">
-        <div class="colomn-biography-text">
-          <ul>
-            <li class="competencies-start">Art Director</li>
-            <li class="competencies">Scenography</li>
-            <li class="competencies">Styling</li>
-            <li class="competencies">Creative Photography</li>
-            <li class="competencies">Design</li>
-          </ul>
-          <h2>Biography</h2>
-        </div>
         <blockquote>
           <p class="davis">“The more I deal with the work as something that is my own, as something that is
             personal, the more
             successfulit is.”</p>
         </blockquote>
-        <h2 class="colomn-biography-name">-Katya Mills</h2>
-        <img class="colomn-katya-mills-dune" src="./img/katya-mills-dune.jpg" alt="katya-mills-dune" />
-      </section>
-      <section class="colomn-wrp" title="Designers">
-        <h2 class="colomn-designers-heading">Designers</h2>
-        <ul class="cards">
-          <li>
-            <article class="colomn-card-first">
-              <img src="./img/min-jess-wonder-punpon.jpg" alt="colomn-jess-wonder-punpon" />
-              <div class="colomn-text-card-first">
-                <h3>Jess Wonder</h3>
-                <div class="from-skills">
-                  <p><span>From</span>Be more flower</p>
-                  <div class="skills">
-                    <span>Skills</span>
-                    <ul>
-                      <li class="designer-competencies">Design Strategy</li>
-                      <li class="designer-competencies-end">Marketing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="colomn-card-second">
-              <div class="colomn-text-card-second">
-                <h3>Kameron Clein</h3>
-                <div class="from-skills">
-                  <p><span>From</span>Be more flower</p>
-                  <div class="skills">
-                    <span>Skills</span>
-                    <ul>
-                      <li class="designer-competencies">Design Strategy</li>
-                      <li class="designer-competencies-end">Marketing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <img class="colomn-card-img" src="./img/min-kameron-clein-folder.jpg" alt="colomn-kameron-clein-folder" />
-            </article>
-          </li>
-          <li>
-            <article class="colomn-card-first">
-              <img src="./img/min-louisse-red-coffee-book.jpg" alt="colomn-louisse-red-coffee-book" />
-              <div class="colomn-text-card-first">
-                <h3>Louisse Red</h3>
-                <div class="from-skills">
-                  <p><span>From</span>Be more flower</p>
-                  <div class="skills">
-                    <span>Skills</span>
-                    <ul>
-                      <li class="designer-competencies">Design Strategy</li>
-                      <li class="designer-competencies-end">Marketing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article class="colomn-card-second">
-              <div class="colomn-text-card-second">
-                <h3>Kameron Clein</h3>
-                <div class="from-skills">
-                  <p><span>From</span>Be more flower</p>
-                  <div class="skills">
-                    <span>Skills</span>
-                    <ul>
-                      <li class="designer-competencies">Design Strategy</li>
-                      <li class="designer-competencies-end">Marketing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <img class="colomn-card-img" src="./img/min-jess-wonder-punpon.jpg" alt="colomn-jess-wonder-punpon" />
-            </article>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer-main">
-      <ul>
-        <li class="footer-controls">+7 921 123-45-67</li>
-        <li class="footer-controls">info@modstudio.com</li>
-        <li class="footer-controls-end">
-          <img src="./img/icon-stamp-white.jpg" alt="icon-trademark-white" />
+      </div>
+    </section>
+    <section class="wrp" title="Designers">
+      <h2 class="designers-heading">Designers</h2>
+      <ul class="container">
+        <li class="designer-item">
+          <article>
+            <img class="jess-wonder" src="./img/jess-wonder-punpon.jpg" alt="jess-wonder-punpon" />
+            <h3>Jess Wonder</h3>
+            <p><span>From</span>Be more flower</p>
+            <div class="skills">
+              <span>Skills</span>
+              <ul>
+                <li class="designer-competencies">Design Strategy</li>
+                <li class="designer-competencies-end">Marketing</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+        <li class="designer-item">
+          <article>
+            <img class="kameron-clein" src="./img/kameron-clein-folder.jpg" alt="kameron-clein-folder" />
+            <h3>Kameron Clein</h3>
+            <p><span>From</span>Be more flower</p>
+            <div class="skills">
+              <span>Skills</span>
+              <ul>
+                <li class="designer-competencies">Design Strategy</li>
+                <li class="designer-competencies-end">Marketing</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+        <li class="designer-item">
+          <article>
+            <img class="louisse-red-coffee" src="./img/louisse-red-coffee-book.jpg" alt="louisse-red-coffee-book" />
+            <h3>Louisse Red</h3>
+            <p><span>From</span>Be more flower</p>
+            <div class="skills">
+              <span>Skills</span>
+              <ul>
+                <li class="designer-competencies">Design Strategy</li>
+                <li class="designer-competencies-end">Marketing</li>
+              </ul>
+            </div>
+          </article>
+        </li>
+        <li class="designer-item">
+          <article>
+            <img class="jess-wonder" src="./img/jess-wonder-punpon.jpg" alt="jess-wonder-punpon" />
+            <h3>Jess Wonder</h3>
+            <p><span>From</span>Be more flower</p>
+            <div class="skills">
+              <span>Skills</span>
+              <ul>
+                <li class="designer-competencies">Design Strategy</li>
+                <li class="designer-competencies-end">Marketing</li>
+              </ul>
+            </div>
+          </article>
         </li>
       </ul>
-      <ul class="social-networks">
-        <li><a hreh="#" alt="VK"><img src="./img/icon-vk-white.jpg" alt="icon-vk-white" /></a></li>
-        <li><a hreh="#" alt="pinterest"><img src="./img/icon-pinterest-white.jpg" alt="icon-pinterest-white" /></a></li>
-        <li><a hreh="#" alt="ball"><img src="./img/icon-ball-white.jpg" alt="icon-pinterest-white" /></a></li>
-      </ul>
-      <img class="icon-trademark-white" src="./img/icon-stamp-white.jpg" alt="icon-trademark-white" />
-    </footer>
-  </div>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li class="footer-controls">+7 921 123-45-67</li>
+      <li class="footer-controls">info@modstudio.com</li>
+    </ul>
+    <ul class="social-networks">
+      <li><a hreh="#" alt="VK"><img src="./img/icon-vk-white.jpg" alt="icon-vk-white" /></a></li>
+      <li><a hreh="#" alt="pinterest"><img src="./img/icon-pinterest-white.jpg" alt="icon-pinterest-white" /></a></li>
+      <li><a hreh="#" alt="ball"><img src="./img/icon-ball-white.jpg" alt="icon-pinterest-white" /></a></li>
+    </ul>
+    <img src="./img/icon-stamp-white.jpg" alt="icon-trademark-white" />
+  </footer>
 </body>
 
 </html>

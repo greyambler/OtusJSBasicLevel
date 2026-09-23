@@ -1,46 +1,25 @@
 @import "./reset.css";
 @import "./fonts.css";
-@import "./dialog.css";
-
-/* * {
-  outline: 1px solid green;
-} */
-
-.wrp-short-icon-message,
-.short-href,
-.item-href-end,
-.colomn-wrp-biography,
-.colomn-wrp,
-.footer-column,
-.footer-controls-end {
-  display: none;
-}
-
-.header {
-  display: none;
-}
 
 body {
   font-family: "roboto", serif;
   font-weight: normal;
   color: #000000;
   background-color: #FFFFFF;
-  max-width: 2000px;
-  /* max-height: 2597px; */
-}
-
-.page-list {
-  margin: 0 auto;
+  max-width: 1440px;
+  max-height: 2597px;
 }
 
 /* header */
-.header-main {
-  height: 135px;
+header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  height: 135px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 59px;
   gap: 20px;
-  margin: 0 20px;
-  padding-bottom: 60px;
 }
 
 h1 {
@@ -50,32 +29,23 @@ h1 {
   line-height: 120%;
 }
 
-.nav-main {
-  width: 100%;
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
 }
 
 .head-menu {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
   gap: 55px;
 }
 
-.item-href,
-.text-long {
-  display: inline;
-  margin: 0;
-  padding: 0;
+a {
   font-weight: 500;
   font-size: 24px;
   color: #000000;
-  padding: 0;
-  text-decoration: none;
-}
-
-.text-long {
-  color: #000000;
-  margin-left: -6px;
-  text-decoration: none;
 }
 
 /* header */
@@ -97,7 +67,7 @@ main {
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 24px;
 }
 
@@ -164,7 +134,7 @@ h2 {
 
 /* wrp */
 .wrp {
-  width: 100%;
+  max-height: 1236px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -178,10 +148,9 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(3, 33%);
   column-gap: 12px;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 .designer-item:nth-child(4n+1) {
@@ -191,19 +160,11 @@ h2 {
 
 .designer-item:nth-child(4n+4) {
   grid-column: span 2;
+  padding-right: 12px;
   justify-items: end;
-}
-
-.designer-item:nth-child(even) {
-  justify-items: end;
-}
-
-.designer-item:nth-child(3) {
-  margin-right: 13.5px;
 }
 
 .jess-wonder {
-  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -213,18 +174,14 @@ h3 {
 }
 
 .kameron-clein {
-  justify-self: end;
-  width: 100%;
   margin-bottom: 20px;
 }
 
 .louisse-red-coffee {
-  width: 100%;
   margin-bottom: 20px;
 }
 
 .jess-wonder-end {
-  width: 100%;
   justify-items: end;
 }
 
@@ -281,6 +238,7 @@ li {
   margin-left: 5px;
 }
 
+
 /* main */
 
 /* footer */
@@ -289,9 +247,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #0D0D0D;
-  padding: 0 20px;
-  margin-top: 95px;
-  height: 190px;
+  padding: 70px 20px;
+  margin-top: 82px;
 }
 
 .footer-controls {
@@ -300,7 +257,6 @@ footer {
   line-height: 26px;
   color: #FFFFFF;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .social-networks {
@@ -313,207 +269,3 @@ footer {
 }
 
 /* footer */
-
-@media (max-width: 768px) {
-
-  /* .footer-main */
-  .text-long,
-  .icon-message,
-  .wrp-biography,
-  .competencies::after,
-  .icon-trademark-white,
-  .wrp {
-    display: none;
-  }
-
-  h1 {
-    visibility: hidden;
-    height: 0;
-    display: none;
-    align-items: center;
-    gap: 0;
-    margin: 0;
-    padding-bottom: 0;
-    outline: 1px solid red;
-  }
-
-  .header-main {
-    height: 84px;
-    padding-left: 30px;
-    padding-right: 25px;
-    padding-bottom: 80px;
-  }
-
-  .head-menu {
-    display: flex;
-    justify-content: space-between;
-    gap: 0;
-  }
-
-  .item-href {
-    font-size: 40px;
-  }
-
-  .item-href-end {
-    display: inline;
-  }
-
-  /* header */
-  /* main */
-  main {
-    width: 100%;
-    margin: 0;
-  }
-
-  /* colomn-wrp-biography */
-  .colomn-wrp-biography {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 31.91%;
-    margin-bottom: 80px;
-  }
-
-  .colomn-biography-text {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 16px 0 10px;
-    padding-bottom: 20px;
-  }
-
-  .competencies-start {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 117%;
-  }
-
-  .competencies {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-    gap: 6px;
-  }
-
-  .competencies::before {
-    content: "";
-    width: 4px;
-    height: 2px;
-    background-color: #000000;
-    display: block;
-    margin-left: 5px;
-  }
-
-
-  h2 {
-    font-weight: 700;
-    font-size: 18px;
-  }
-
-  .davis {
-    font-family: "bitter";
-    font-size: 30px;
-    font-weight: 300;
-    padding: 0 14px;
-    width: 70%;
-  }
-
-  .davis::before {
-    display: none;
-  }
-
-  .colomn-biography-name {
-    font-family: "playfair display regular";
-    font-size: 64px;
-    width: 80%;
-    font-weight: 400;
-    padding: 90px 14px 33px 14px;
-  }
-
-  .colomn-katya-mills-dune {
-    height: 42%;
-    max-height: 400px;
-    object-fit: cover;
-  }
-
-  /* colomn-wrp-biography */
-  /* colomn-wrp */
-  .colomn-wrp {
-    display: block;
-  }
-
-  .colomn-designers-heading {
-    font-size: 24px;
-    padding-left: 119px;
-    padding-bottom: 30px;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 74px;
-  }
-
-  .colomn-card-first {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .colomn-text-card-first {
-    margin-left: 29px;
-    margin-top: 45px;
-  }
-
-  .colomn-card-second {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: 0 32px;
-  }
-
-  .colomn-text-card-second {
-    margin-top: 44px;
-  }
-
-  .colomn-card-img {
-    justify-self: end;
-    object-fit: contain;
-  }
-
-  h3 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 80%;
-  }
-
-  .from-skills {
-    line-height: 45%;
-  }
-
-  /* main */
-
-  /*footer*/
-  footer {
-    padding-left: 17px;
-    padding-right: 17px;
-    margin-top: 78px;
-    height: 174px;
-    flex-wrap: wrap;
-  }
-
-  .footer-controls-end {
-    display: flex;
-    align-items: end;
-    height: 23px;
-  }
-
-
-  .social-networks {
-    padding-top: 18px;
-  }
-
-  /*footer*/
-}
