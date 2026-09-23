@@ -9,6 +9,42 @@
 </head>
 
 <body>
+  <dialog id="dialogTest" class="underlayer">
+    <form action="#" method="get" class="main-dialog">
+      <div class="shell">
+        <h4 class="title-dialog">Get in touch</h4>
+        <p class="description-dialog">Do you have any questions? Have something to say?
+          Don't be shy, write to us:</p>
+        <ul class="row-data">
+          <li class="name-field">
+            Name
+          </li>
+          <li>
+            <input type="text" name="name" class="data-name" placeholder="3+ Characters" />
+          </li>
+        </ul>
+        <ul class="row-data">
+          <li class="name-field">E-mail</li>
+          <li>
+            <input type="text" name="mail" class="data-mail" placeholder="name@email.com" />
+          </li>
+        </ul>
+        <ul class="row-comment">
+          <li class="name-field">Comment</li>
+          <li>
+            <textarea id="comment" name="comment" rows="6" cols="40" placeholder="Some text..."></textarea>
+          </li>
+        </ul>
+        <div class="buttons-panel">
+          <button class="btn-reset" type="reset" onclick="window.dialogTest.close()">Cancel</button>
+          <button class="btn-submit" type="submit" onclick="window.dialogTest.close()">
+            Send
+            <!-- <p class="send-plus">+ &nbsp;</p>Send -->
+          </button>
+        </div>
+      </div>
+    </form>
+  </dialog>
   <div class="page-list">
     <h1 class="sr-only">Дизайн студио Мод</h1>
     <header class="header-main">
@@ -37,7 +73,7 @@
             </a>
           </li>
           <li class="item-href-end">
-            <button class="item-href">
+            <button class="item-href" onclick="window.dialogTest.showModal()">
               <img src="./img/icon-message.svg" alt="icon-message" />
             </button>
           </li>
