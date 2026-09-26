@@ -1,0 +1,75 @@
+
+
+
+In css/style.css:
+
+>  /* footer */
++@media (max-width: 768px) {
++
++  .text-long,
++  .header-mod,
++  .davis::before,
++  .competency::after,
++  .jess-wonder,
+вы тут делаете смену картинки - это круто
+но так к сожалению получаются дубли
+можно сделать через picture + source (и уже в сурсе сделать медиа и ссылку)
+
+https://doka.guide/html/picture/
+https://habr.com/ru/articles/572368/
+-----------------------------------------------
+
+In css/style.css:
+
+> +  /* .wrp {
++    outline: 2px solid red;
++  } */
++
++  .designers-heading {
++    padding-bottom: 31px;
++  }
++
++  .container {
++    width: 100%;
++    grid-template-columns: 1fr;
++    grid-template-rows: repeat(4, 1fr);
++    gap: 74px
++  }
++
++  .jess-wonder-narrow,
+я бы делала бы все таки тут 1 класс
+designer-item-img
+
+In css/style.css:
+
+> +    grid-template-columns: 1fr;
++    grid-template-rows: repeat(4, 1fr);
++    gap: 74px
++  }
++
++  .jess-wonder-narrow,
++  .kameron-clein-narrow,
++  .louisse-red-coffee-narrow,
++  .jess-wonder-narrow-end {
++    display: flex;
++    width: 45%;
++    height: 313px;
++    object-fit: contain;
++  }
++
++  .kameron-clein-narrow,
+тут тоже лучше через nth-of-type
+
+—
+Reply to this email directly, view it on GitHub, or unsubscribe.
+Triage notifications, keep track of coding agent tasks and review pull requests on the go with GitHub Mobile for iOS and Android. Download it today!
+You are receiving this because you authored the thread.
+
+
+
+
+
+
+
+
+
