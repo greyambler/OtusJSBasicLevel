@@ -1,54 +1,141 @@
-@import "./reset.css";
-@import "./fonts.css";
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* reset */
+/* font */
+@font-face {
+  font-family: "playfair display regular";
+  src: local("playfair display regular"),
+    local("playfairdisplay regular"),
+    local("playfairdisplay-regular"),
+    url("../fonts/playfair-display/playfairdisplay-regular.ttf");
+}
+
+@font-face {
+  font-family: "playfair display semibold";
+  src: local("playfair display semibold"),
+    local("playfairdisplay semibold"),
+    local("playfairdisplay-semibold"),
+    url("../fonts/playfair-display/playfairdisplay-semibold.ttf");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: local("roboto regular"),
+    local("roboto-regular"),
+    url("../fonts/roboto/roboto-regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: local("roboto bold"),
+    local("roboto-bold"),
+    url("../fonts/roboto/roboto-bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "bitter";
+  src: local("bitter"),
+    url("../fonts/bitter/bitter-regular.ttf");
+  font-weight: normal;
+}
+
+/* font */
+
+/* * {
+  outline: 1px solid purple;
+} */
+
+.text-long,
+.jess-wonder-narrow,
+.kameron-clein-narrow,
+.louisse-red-coffee-narrow,
+.jess-wonder-narrow,
+.jess-wonder-narrow-end {
+  display: none;
+}
 
 body {
   font-family: "roboto", serif;
   font-weight: normal;
   color: #000000;
   background-color: #FFFFFF;
-  max-width: 1440px;
-  max-height: 2597px;
+  max-width: 2000px;
+  /*max-height: 2597px; */
+}
+
+.page-list {
+  margin: 0 auto;
 }
 
 /* header */
-header {
+.header-main {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
   height: 135px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 59px;
+  padding-bottom: 60px;
   gap: 20px;
 }
 
-h1 {
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.header-mod {
   font-family: "playfair display semiBold";
   font-weight: 600;
   font-size: 86px;
   line-height: 120%;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 22px;
+.nav-main {
+  padding-top: 9px;
+  width: 100%;
 }
 
 .head-menu {
   display: flex;
-  flex-direction: row;
-  gap: 55px;
+  justify-content: flex-end;
+  gap: 47px;
+  margin-right: 10px;
 }
 
-a {
+.item-href,
+.text-long {
+  display: inline;
+  margin: 0;
+  padding: 0;
   font-weight: 500;
   font-size: 24px;
   color: #000000;
+  padding: 0;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+
+.text-long {
+  color: #000000;
+  margin-left: -6px;
+  text-decoration: none;
 }
 
 /* header */
+
 /* main */
 main {
   max-width: 1165px;
@@ -57,7 +144,6 @@ main {
 
 .wrp-biography {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 59px;
 }
 
@@ -66,8 +152,15 @@ main {
   object-fit: cover;
 }
 
+.presentation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 18px;
+}
+
 h2 {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 24px;
 }
 
@@ -80,10 +173,11 @@ h2 {
 }
 
 .biography-text {
-  width: 454px;
+  max-width: 454px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 14px;
 }
 
 .biography-name {
@@ -99,14 +193,14 @@ h2 {
   font-weight: bold;
 }
 
-.competencies,
-.competencies-end {
+.competency,
+.competency-end {
   font-size: 18px;
   display: inline-block;
   font-weight: bold;
 }
 
-.competencies::after {
+.competency::after {
   content: "";
   width: 2px;
   height: 18px;
@@ -134,7 +228,7 @@ h2 {
 
 /* wrp */
 .wrp {
-  max-height: 1236px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -148,9 +242,10 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
   column-gap: 12px;
-  row-gap: 30px;
+  row-gap: 20px;
 }
 
 .designer-item:nth-child(4n+1) {
@@ -160,11 +255,19 @@ h2 {
 
 .designer-item:nth-child(4n+4) {
   grid-column: span 2;
-  padding-right: 12px;
   justify-items: end;
 }
 
+.designer-item:nth-child(even) {
+  justify-items: end;
+}
+
+.designer-item:nth-child(3) {
+  margin-right: 13.5px;
+}
+
 .jess-wonder {
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -174,14 +277,18 @@ h3 {
 }
 
 .kameron-clein {
+  justify-self: end;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .louisse-red-coffee {
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .jess-wonder-end {
+  width: 100%;
   justify-items: end;
 }
 
@@ -202,6 +309,7 @@ span {
 
 .skills {
   display: flex;
+  align-items: flex-end;
 }
 
 span::after {
@@ -214,20 +322,20 @@ span::after {
   margin: 0 5px;
 }
 
-li {
+.designer-competencies {
+  display: flex;
+}
+
+.designer-competenciy,
+.designer-competenciy-end {
+  font-size: 16px;
+  display: flex;
+  align-items: flex-end;
   font-weight: normal;
   font-size: 16px;
 }
 
-.designer-competencies,
-.designer-competencies-end {
-  font-size: 16px;
-  display: inline-block;
-  font-weight: normal;
-
-}
-
-.designer-competencies::after {
+.designer-competenciy::after {
   content: "";
   width: 2px;
   height: 16px;
@@ -235,9 +343,8 @@ li {
   display: inline-block;
   font-weight: normal;
   transform: translateY(3px) rotate(15deg);
-  margin-left: 5px;
+  margin-right: 3px;
 }
-
 
 /* main */
 
@@ -248,10 +355,17 @@ footer {
   align-items: center;
   background-color: #0D0D0D;
   padding: 70px 20px;
-  margin-top: 82px;
+  margin-top: 94px;
 }
 
-.footer-controls {
+.footer-data {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-control {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -268,4 +382,248 @@ footer {
   margin-left: 90px;
 }
 
+.footer-trademark {
+  text-wrap: wrap;
+  color: #FFF;
+}
+
 /* footer */
+@media (max-width: 768px) {
+
+  .text-long,
+  .header-mod,
+  .davis::before,
+  .competency::after,
+  .jess-wonder,
+  .kameron-clein,
+  .louisse-red-coffee,
+  .jess-wonder {
+    display: none;
+  }
+
+  .header-main {
+    height: 75px;
+    margin-bottom: 25px;
+  }
+
+  .head-menu {
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 35px;
+  }
+
+  .item-href {
+    font-size: 40px;
+  }
+
+  .item-href-end {
+    padding-top: 5px;
+  }
+
+  /* wrp-biography */
+  .wrp-biography {
+    flex-direction: column-reverse;
+    margin-bottom: 77px;
+  }
+
+  .katya-mills-dune {
+    width: 100%;
+    max-height: 400px;
+  }
+
+  .presentation {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .biography-heading-shell {
+    order: 2;
+    width: 100%
+  }
+
+  .biography-heading {
+    font-size: 18px;
+    height: 38px;
+    padding-top: 4px;
+    padding-left: 33px;
+    transform: none;
+  }
+
+
+  .biography-text {
+    max-width: 100%;
+    padding-top: 4px;
+    flex-direction: column-reverse;
+    font-size: 18px;
+    margin-left: 12px;
+  }
+
+  .competencies {
+    order: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 19px;
+  }
+
+  .competency,
+  .competency-end {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .competency::before,
+  .competency-end::before {
+    content: "";
+    width: 6px;
+    height: 3px;
+    background-color: #000000;
+    /* margin-left: 5px; */
+  }
+
+  .post-name::before {
+    content: "";
+    width: 12px;
+    height: 4px;
+    background-color: #000000;
+  }
+
+  .davis {
+    order: 3;
+    font-size: 30px;
+    margin-bottom: 88px;
+  }
+
+  .biography-name {
+    width: 90%;
+    font-size: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+  }
+
+  .biography-name::before {
+    content: "";
+    width: 24px;
+    height: 4px;
+    background-color: #000000;
+  }
+
+  /* wrp-biography */
+
+  /* wrp */
+  /* .wrp {
+    outline: 2px solid red;
+  } */
+
+  .designers-heading {
+    padding-bottom: 31px;
+  }
+
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 74px
+  }
+
+  .jess-wonder-narrow,
+  .kameron-clein-narrow,
+  .louisse-red-coffee-narrow,
+  .jess-wonder-narrow-end {
+    display: flex;
+    width: 45%;
+    height: 313px;
+    object-fit: contain;
+  }
+
+  .kameron-clein-narrow,
+  .jess-wonder-narrow-end {
+    padding-right: 32px;
+  }
+
+  .colomn-card-first {
+    width: 100%;
+    display: flex;
+    padding-left: 17px;
+  }
+
+  .designer-presentation {
+    padding-top: 40px;
+    padding-left: 30px;
+    width: 100%;
+  }
+
+  .name-designer {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .colomn-card-second {
+    width: 100%;
+    grid-column: 1;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .designer-item:nth-child(odd) {
+    grid-column: span 1;
+    justify-items: end;
+  }
+
+  .designer-item:nth-child(even) {
+    grid-column: span 1;
+    justify-items: start;
+  }
+
+  .designer-item {
+    width: 100%;
+  }
+
+  /* wrp */
+
+  /* footer */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 174px;
+  }
+
+  .footer-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-data {
+    order: 1;
+  }
+
+  .footer-control {
+    font-size: 16px;
+  }
+
+  .social-networks {
+    padding-top: 33px;
+  }
+
+  .footer-trademark {
+    order: 2;
+    text-wrap: wrap;
+    color: #FFF;
+    font-size: 16px;
+  }
+
+  /* footer */
+}
