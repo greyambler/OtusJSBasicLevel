@@ -79,7 +79,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   height: 135px;
-  padding-bottom: 60px;
+  padding-bottom: 59px;
   gap: 20px;
 }
 
@@ -108,8 +108,9 @@ body {
 .head-menu {
   display: flex;
   justify-content: flex-end;
-  gap: 47px;
+  gap: 32px;
   margin-right: 10px;
+  /* outline: 2px solid red; */
 }
 
 .item-href {
@@ -123,6 +124,14 @@ body {
   text-decoration: none;
   background-color: transparent;
   border: none;
+}
+
+.item-href-c {
+  margin-left: 23px;
+}
+
+.item-href-a {
+  margin-left: 23px;
 }
 
 li:focus,
@@ -327,7 +336,8 @@ h3 {
   font-size: 16px;
 }
 
-p {
+/* p  */
+.from-text {
   font-weight: normal;
   font-size: 18px;
 }
@@ -351,18 +361,18 @@ p {
   background-color: #000000;
   display: inline-block;
   transform: translateY(3px) rotate(15deg);
-  margin: 0 5px;
+  margin-left: 3px;
+  margin-right: 1px;
 }
 
 .designer-competencies {
   display: flex;
 }
 
-.designer-competenciy,
-.designer-competenciy-end {
+/* .designer-competenciy-end */
+.designer-competenciy {
   font-size: 16px;
   display: flex;
-  align-items: flex-end;
   font-weight: normal;
   font-size: 16px;
 }
@@ -376,6 +386,10 @@ p {
   font-weight: normal;
   transform: translateY(3px) rotate(15deg);
   margin-right: 3px;
+}
+
+.designer-competenciy:nth-last-child(1)::after {
+  display: none;
 }
 
 /* main */
@@ -657,6 +671,12 @@ footer {
     font-size: 40px;
   }
 
+  .item-href-c,
+  .item-href-a {
+    margin-left: 0;
+  }
+
+
   .item-href:nth-last-child(1) {
     padding-top: 5px;
   }
@@ -664,7 +684,7 @@ footer {
   /* wrp-biography */
   .wrp-biography {
     flex-direction: column-reverse;
-    margin-bottom: 77px;
+    margin-bottom: 79px;
   }
 
   .katya-mills-dune {
@@ -694,7 +714,7 @@ footer {
 
   .biography-text {
     max-width: 100%;
-    padding-top: 4px;
+    padding-top: 2px;
     flex-direction: column-reverse;
     font-size: 18px;
     margin-left: 12px;
@@ -779,7 +799,7 @@ footer {
   .jess-wonder-narrow-end {
     display: flex;
     width: 45%;
-    height: 313px;
+    max-height: 313px;
     object-fit: contain;
   }
 
@@ -891,4 +911,63 @@ footer {
   }
 
   /* dialog */
+}
+
+@media (max-width: 510px) {
+
+  .from-span::after,
+  .designer-competenciy::after {
+    display: none;
+  }
+
+  .head-menu {
+    padding-left: 12px;
+  }
+
+  .biography-heading-shell {
+    display: none;
+  }
+
+  .designers-heading {
+    padding-left: 19px
+  }
+
+  .from-span,
+  .skills,
+  .designer-competencies {
+    display: block;
+  }
+
+  .from-span::after,
+  .designer-competenciy::before {
+    content: "";
+    margin: 7px 5px 0 5px;
+    width: 6px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  .designer-presentation {
+    padding: 0;
+    padding-left: 2px;
+  }
+
+  .name-designer {
+    font-size: 18px;
+  }
+
+  .from-text,
+  .from-span,
+  .designer-competenciy {
+    font-size: 14px;
+  }
+
+  .kameron-clein-narrow,
+  .jess-wonder-narrow-end {
+    padding: 0;
+  }
+
+  .social-networks {
+    margin: 0;
+  }
 }
