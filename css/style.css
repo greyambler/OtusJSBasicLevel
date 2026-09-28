@@ -61,14 +61,6 @@
   width: 1px;
 }
 
-.jess-wonder-narrow,
-.kameron-clein-narrow,
-.louisse-red-coffee-narrow,
-.jess-wonder-narrow,
-.jess-wonder-narrow-end {
-  display: none;
-}
-
 body {
   font-family: "roboto", serif;
   font-weight: normal;
@@ -306,7 +298,7 @@ h2 {
   margin-right: 13.5px;
 }
 
-.jess-wonder {
+.img-designer {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -314,36 +306,15 @@ h2 {
 h3 {
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.kameron-clein {
-  justify-self: end;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.louisse-red-coffee {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.jess-wonder-end {
-  width: 100%;
-  justify-items: end;
-}
-
-h3 {
   font-weight: 700;
   font-size: 16px;
 }
 
-/* p  */
 .from-text {
   font-weight: normal;
   font-size: 18px;
 }
 
-/* span  */
 .from-span {
   font-weight: 700;
   font-size: 16px;
@@ -354,7 +325,6 @@ h3 {
   align-items: flex-end;
 }
 
-/* span::after  */
 .from-span::after {
   content: "";
   width: 2px;
@@ -370,7 +340,6 @@ h3 {
   display: flex;
 }
 
-/* .designer-competenciy-end */
 .designer-competenciy {
   font-size: 16px;
   display: flex;
@@ -500,7 +469,6 @@ footer {
   line-height: 80%;
   padding-bottom: 8px;
   padding-left: 1px;
-  /* margin-bottom: px; */
 }
 
 .input-form {
@@ -647,11 +615,7 @@ footer {
   .text-long,
   .header-mod,
   .davis::before,
-  .competency::after,
-  .jess-wonder,
-  .kameron-clein,
-  .louisse-red-coffee,
-  .jess-wonder {
+  .competency::after {
     display: none;
   }
 
@@ -733,13 +697,11 @@ footer {
     gap: 4px;
   }
 
-  /* .competency-end::before */
   .competency::before {
     content: "";
     width: 6px;
     height: 3px;
     background-color: #000000;
-    /* margin-left: 5px; */
   }
 
   .post-name::before {
@@ -776,10 +738,6 @@ footer {
   /* wrp-biography */
 
   /* wrp */
-  /* .wrp {
-    outline: 2px solid red;
-  } */
-
   .designers-heading {
     padding-bottom: 31px;
   }
@@ -791,19 +749,23 @@ footer {
     gap: 74px
   }
 
-  .jess-wonder-narrow,
-  .kameron-clein-narrow,
-  .louisse-red-coffee-narrow,
-  .jess-wonder-narrow-end {
+  .shell-img,
+  .shell-img-second {
     display: flex;
-    width: 45%;
+    align-items: flex-start;
+    width: 54%;
     max-height: 313px;
-    object-fit: contain;
   }
 
-  .kameron-clein-narrow,
-  .jess-wonder-narrow-end {
-    padding-right: 32px;
+  .shell-img-second {
+    margin-right: 32px;
+    width: 58%;
+  }
+
+  .img-designer {
+    width: 100%;
+    max-height: 313px;
+    object-fit: contain;
   }
 
   .colomn-card-first {
@@ -959,11 +921,6 @@ footer {
   .from-span,
   .designer-competenciy {
     font-size: 14px;
-  }
-
-  .kameron-clein-narrow,
-  .jess-wonder-narrow-end {
-    padding: 0;
   }
 
   .social-networks {
