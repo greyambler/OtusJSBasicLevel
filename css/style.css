@@ -698,7 +698,7 @@ footer {
 
   .biography-heading-shell {
     order: 2;
-    width: 100%
+    width: 100%;
   }
 
   .biography-heading {
@@ -922,10 +922,11 @@ footer {
     padding-left: 12px;
   }
 
-  .biography-heading-shell {
-    display: none;
+  .presentation {
+    flex-direction: column-reverse;
   }
 
+  .biography-heading,
   .designers-heading {
     padding-left: 19px
   }
