@@ -51,6 +51,16 @@
   outline: 1px solid purple;
 } */
 
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .jess-wonder-narrow,
 .kameron-clein-narrow,
 .louisse-red-coffee-narrow,
@@ -73,36 +83,28 @@ body {
 }
 
 /* header */
-.header-main {
-  display: flex;
-  align-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
-  height: 135px;
-  padding-bottom: 59px;
-  gap: 20px;
-}
-
-.sr-only {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .header-mod {
+  display: inline;
   font-family: "playfair display semiBold";
   font-weight: 600;
   font-size: 86px;
   line-height: 120%;
 }
 
-.nav-main {
-  padding-top: 9px;
+.shell-header {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 135px;
+  margin-bottom: 59px;
+}
+
+.shell-header-min {
   width: 100%;
+  height: 75px;
+  align-content: center;
+  padding-top: 6px;
 }
 
 .head-menu {
@@ -110,7 +112,6 @@ body {
   justify-content: flex-end;
   gap: 32px;
   margin-right: 10px;
-  /* outline: 2px solid red; */
 }
 
 .item-href {
@@ -170,8 +171,8 @@ li:focus,
   stroke: #A07C72;
 }
 
-
 /* header */
+
 /* main */
 main {
   max-width: 1165px;
@@ -639,8 +640,6 @@ footer {
   background-color: #EDEDED;
 }
 
-
-
 /* dialog */
 
 @media (max-width: 768px) {
@@ -656,9 +655,11 @@ footer {
     display: none;
   }
 
-  .header-main {
+  /* header */
+  .shell-header {
+    margin: 0 auto;
     height: 75px;
-    margin-bottom: 25px;
+    margin-bottom: 85px;
   }
 
   .head-menu {
@@ -676,10 +677,7 @@ footer {
     margin-left: 0;
   }
 
-
-  .item-href:nth-last-child(1) {
-    padding-top: 5px;
-  }
+  /* header */
 
   /* wrp-biography */
   .wrp-biography {
