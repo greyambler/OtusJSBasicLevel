@@ -51,12 +51,14 @@
   outline: 1px solid purple;
 } */
 
-.jess-wonder-narrow,
-.kameron-clein-narrow,
-.louisse-red-coffee-narrow,
-.jess-wonder-narrow,
-.jess-wonder-narrow-end {
-  display: none;
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 body {
@@ -73,36 +75,28 @@ body {
 }
 
 /* header */
-.header-main {
-  display: flex;
-  align-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
-  height: 135px;
-  padding-bottom: 59px;
-  gap: 20px;
-}
-
-.sr-only {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .header-mod {
+  display: inline;
   font-family: "playfair display semiBold";
   font-weight: 600;
   font-size: 86px;
   line-height: 120%;
 }
 
-.nav-main {
-  padding-top: 9px;
+.shell-header {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 135px;
+  margin-bottom: 59px;
+}
+
+.shell-header-min {
   width: 100%;
+  height: 75px;
+  align-content: center;
+  padding-top: 6px;
 }
 
 .head-menu {
@@ -110,7 +104,6 @@ body {
   justify-content: flex-end;
   gap: 32px;
   margin-right: 10px;
-  /* outline: 2px solid red; */
 }
 
 .item-href {
@@ -170,8 +163,8 @@ li:focus,
   stroke: #A07C72;
 }
 
-
 /* header */
+
 /* main */
 main {
   max-width: 1165px;
@@ -305,7 +298,7 @@ h2 {
   margin-right: 13.5px;
 }
 
-.jess-wonder {
+.img-designer {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -313,36 +306,15 @@ h2 {
 h3 {
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.kameron-clein {
-  justify-self: end;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.louisse-red-coffee {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.jess-wonder-end {
-  width: 100%;
-  justify-items: end;
-}
-
-h3 {
   font-weight: 700;
   font-size: 16px;
 }
 
-/* p  */
 .from-text {
   font-weight: normal;
   font-size: 18px;
 }
 
-/* span  */
 .from-span {
   font-weight: 700;
   font-size: 16px;
@@ -353,7 +325,6 @@ h3 {
   align-items: flex-end;
 }
 
-/* span::after  */
 .from-span::after {
   content: "";
   width: 2px;
@@ -369,7 +340,6 @@ h3 {
   display: flex;
 }
 
-/* .designer-competenciy-end */
 .designer-competenciy {
   font-size: 16px;
   display: flex;
@@ -499,7 +469,6 @@ footer {
   line-height: 80%;
   padding-bottom: 8px;
   padding-left: 1px;
-  /* margin-bottom: px; */
 }
 
 .input-form {
@@ -639,8 +608,6 @@ footer {
   background-color: #EDEDED;
 }
 
-
-
 /* dialog */
 
 @media (max-width: 768px) {
@@ -648,17 +615,15 @@ footer {
   .text-long,
   .header-mod,
   .davis::before,
-  .competency::after,
-  .jess-wonder,
-  .kameron-clein,
-  .louisse-red-coffee,
-  .jess-wonder {
+  .competency::after {
     display: none;
   }
 
-  .header-main {
+  /* header */
+  .shell-header {
+    margin: 0 auto;
     height: 75px;
-    margin-bottom: 25px;
+    margin-bottom: 85px;
   }
 
   .head-menu {
@@ -676,10 +641,7 @@ footer {
     margin-left: 0;
   }
 
-
-  .item-href:nth-last-child(1) {
-    padding-top: 5px;
-  }
+  /* header */
 
   /* wrp-biography */
   .wrp-biography {
@@ -700,7 +662,7 @@ footer {
 
   .biography-heading-shell {
     order: 2;
-    width: 100%
+    width: 100%;
   }
 
   .biography-heading {
@@ -735,13 +697,11 @@ footer {
     gap: 4px;
   }
 
-  /* .competency-end::before */
   .competency::before {
     content: "";
     width: 6px;
     height: 3px;
     background-color: #000000;
-    /* margin-left: 5px; */
   }
 
   .post-name::before {
@@ -778,10 +738,6 @@ footer {
   /* wrp-biography */
 
   /* wrp */
-  /* .wrp {
-    outline: 2px solid red;
-  } */
-
   .designers-heading {
     padding-bottom: 31px;
   }
@@ -793,19 +749,23 @@ footer {
     gap: 74px
   }
 
-  .jess-wonder-narrow,
-  .kameron-clein-narrow,
-  .louisse-red-coffee-narrow,
-  .jess-wonder-narrow-end {
+  .shell-img,
+  .shell-img-second {
     display: flex;
-    width: 45%;
+    align-items: flex-start;
+    width: 54%;
     max-height: 313px;
-    object-fit: contain;
   }
 
-  .kameron-clein-narrow,
-  .jess-wonder-narrow-end {
-    padding-right: 32px;
+  .shell-img-second {
+    margin-right: 32px;
+    width: 58%;
+  }
+
+  .img-designer {
+    width: 100%;
+    max-height: 313px;
+    object-fit: contain;
   }
 
   .colomn-card-first {
@@ -924,10 +884,11 @@ footer {
     padding-left: 12px;
   }
 
-  .biography-heading-shell {
-    display: none;
+  .presentation {
+    flex-direction: column-reverse;
   }
 
+  .biography-heading,
   .designers-heading {
     padding-left: 19px
   }
@@ -960,11 +921,6 @@ footer {
   .from-span,
   .designer-competenciy {
     font-size: 14px;
-  }
-
-  .kameron-clein-narrow,
-  .jess-wonder-narrow-end {
-    padding: 0;
   }
 
   .social-networks {
