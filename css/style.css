@@ -105,7 +105,8 @@ body {
   margin-right: 10px;
 }
 
-.item-href {
+.item-href,
+.href-btn {
   display: inline;
   margin: 0;
   padding: 0;
@@ -140,23 +141,26 @@ li:focus,
   user-select: none;
 }
 
-.href-btn:focus {
+.item-href:active {
   outline: #E0B59F;
   border: 1.5px solid #E0B59F;
   border-radius: 10px;
-  width: 50px;
-  height: 50px;
+  padding: 7px;
   align-items: center;
 }
 
-.href-btn:hover,
-.item-href-img:focus,
-.item-href-img:active {
+.item-href:hover {
+  outline: #E0B59F;
+  border: 1.5px solid #E0B59F;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.item-href-img:focus {
   fill: #E0B59F;
   stroke: #E0B59F;
 }
 
-.href-btn:hover,
 .item-href-img:hover {
   fill: #A07C72;
   stroke: #A07C72;
@@ -605,6 +609,21 @@ dialog::backdrop {
   border: 1px solid #E0B59F;
   color: #868686;
   background-color: #EDEDED;
+}
+
+.shell-social-networks:focus,
+.shell-social-networks:hover {
+  outline: #E0B59F;
+  border: 1.5px solid #E0B59F;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.shell-social-networks:active {
+  border: 1.32px solid #D7C8C1;
+  background-color: #E0B59F;
+  border-radius: 10px;
+  padding: 3px;
 }
 
 /* dialog */
