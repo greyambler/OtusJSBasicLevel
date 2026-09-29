@@ -93,44 +93,76 @@ body {
 
 .shell-header-min {
   width: 100%;
-  height: 75px;
+  height: 100%;
   align-content: center;
-  padding-top: 6px;
+  padding-top: 21px;
 }
 
 .head-menu {
   display: flex;
   justify-content: flex-end;
-  gap: 32px;
-  margin-right: 10px;
+  height: 100%;
+  gap: 21px;
 }
 
-.item-href,
 .href-btn {
-  display: inline;
   margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-top: 31px;
+
+}
+
+.link-item-href {
+  padding-top: 42px;
+}
+
+.item-href {
+  display: inline;
   padding: 0;
   font-weight: 500;
   font-size: 24px;
   color: #000000;
-  padding: 0;
   text-decoration: none;
   background-color: transparent;
   border: none;
 }
 
-.item-href-c {
-  margin-left: 23px;
-}
-
 .item-href-a {
-  margin-left: 23px;
+  margin-left: 36px;
 }
 
-li:focus,
-.item-href:focus {
+.item-href-c {
+  margin-left: 34px;
+}
+
+.href-btn {
   outline: none;
+  padding: 10px 10px 5px 10px;
+}
+
+.href-btn:focus,
+.item-href-img:focus {
+  outline: #E0B59F;
+  border: 1.5px solid #E0B59F;
+  border-radius: 10px;
+  padding: 10px 10px 5px 10px;
+  stroke: #A07C72;
+}
+
+.href-btn:active,
+.item-href-img:active {
   outline: none;
+  border: none;
+  stroke: #E0B59F;
+}
+
+.href-btn:hover,
+.item-href-img:hover {
+  outline: none;
+  border: none;
+  stroke: #A07C72;
 }
 
 .noselect {
@@ -141,29 +173,17 @@ li:focus,
   user-select: none;
 }
 
-.item-href:active {
-  outline: #E0B59F;
-  border: 1.5px solid #E0B59F;
+.link-item:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.link-item:focus {
+  outline: none;
+  color: #E0B59F;
   border-radius: 10px;
-  padding: 7px;
-  align-items: center;
-}
-
-.item-href:hover {
-  outline: #E0B59F;
+  padding: 10px;
   border: 1.5px solid #E0B59F;
-  border-radius: 10px;
-  padding: 7px;
-}
-
-.item-href-img:focus {
-  fill: #E0B59F;
-  stroke: #E0B59F;
-}
-
-.item-href-img:hover {
-  fill: #A07C72;
-  stroke: #A07C72;
 }
 
 /* header */
@@ -508,7 +528,6 @@ dialog::backdrop {
 .comment {
   resize: none;
   border-radius: 8px;
-  font-size: 18px;
   height: 86px;
   padding-top: 8px;
   background-image: url('../img/icon-message.svg');
