@@ -397,30 +397,61 @@ footer {
 }
 
 .footer-data {
-  width: 55%;
+  width: 55.3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.footer-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .footer-control {
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 160%;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
 .social-networks {
   display: flex;
-  gap: 25px;
+  justify-content: flex-end;
+  gap: 18px;
 }
 
-.shell-social-networks,
-.link-social-networks,
 .img-social-networks {
-  display: flex;
-  align-items: flex-end;
+  background-color: #000000;
+  outline: #000000;
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.img-social-networks:disabled {
+  outline: none;
+  border: 1.32px solid #CCCCCC;
+  background-color: #CCCCCC;
+}
+
+.img-social-networks:focus {
+  outline: none;
+  border: 3.32px double #E0B59F;
+}
+
+.img-social-networks:hover {
+  border: 1.32px solid #E0B59F;
+  background-color: #A07C72;
+}
+
+.img-social-networks:active {
+  outline: none;
+  border: 1.32px solid #D7C8C1;
+  background-color: #E0B59F;
 }
 
 .footer-trademark {
@@ -626,21 +657,6 @@ dialog::backdrop {
   border: 1px solid #E0B59F;
   color: #868686;
   background-color: #EDEDED;
-}
-
-.shell-social-networks:focus,
-.shell-social-networks:hover {
-  outline: #E0B59F;
-  border: 1.5px solid #E0B59F;
-  border-radius: 10px;
-  padding: 3px;
-}
-
-.shell-social-networks:active {
-  border: 1.32px solid #D7C8C1;
-  background-color: #E0B59F;
-  border-radius: 10px;
-  padding: 3px;
 }
 
 /* dialog */
@@ -868,27 +884,33 @@ dialog::backdrop {
     margin-top: 80px;
     padding: 0;
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 13px;
     height: 174px;
   }
 
   .footer-data {
+    order: 1;
     width: 100%;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 52px;
   }
 
-  .footer-data {
-    order: 1;
-  }
+  /* .footer-controls {
+    outline: 1px solid wheat;
+  } */
 
   .footer-control {
-    font-size: 16px;
+    align-items: start;
+    line-height: 140%;
+
   }
 
   .social-networks {
-    padding-top: 33px;
+    padding-top: 20px;
+    gap: 16.3px;
   }
 
   .footer-trademark {
@@ -976,7 +998,13 @@ dialog::backdrop {
     font-size: 14px;
   }
 
+  footer {
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+
   .social-networks {
     margin: 0;
+    margin-top: 30px;
   }
 }
