@@ -424,6 +424,10 @@ footer {
   gap: 18px;
 }
 
+.shell-social-networks {
+  height: 100%;
+}
+
 .img-social-networks {
   background-color: #000000;
   outline: #000000;
