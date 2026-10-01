@@ -4,7 +4,6 @@
   list-style-type: none;
 }
 
-/* reset */
 /* font */
 @font-face {
   font-family: "playfair display regular";
@@ -48,7 +47,7 @@
 /* font */
 
 /* * {
-  outline: 1px solid purple;
+  outline: 1px solid red;
 } */
 
 .sr-only {
@@ -94,43 +93,77 @@ body {
 
 .shell-header-min {
   width: 100%;
-  height: 75px;
+  height: 100%;
   align-content: center;
-  padding-top: 6px;
+  padding-top: 21px;
 }
 
 .head-menu {
   display: flex;
   justify-content: flex-end;
-  gap: 32px;
-  margin-right: 10px;
+  height: 100%;
+  gap: 10px;
+}
+
+.href-btn {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-top: 31px;
+}
+
+.link-item-href {
+  padding-top: 42px;
+  /* background-color: red; */
 }
 
 .item-href {
   display: inline;
-  margin: 0;
   padding: 0;
   font-weight: 500;
   font-size: 24px;
   color: #000000;
-  padding: 0;
   text-decoration: none;
   background-color: transparent;
   border: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1.5px solid transparent;
+}
+
+.item-href-a {
+  margin-left: 22px;
 }
 
 .item-href-c {
   margin-left: 23px;
 }
 
-.item-href-a {
-  margin-left: 23px;
+.href-btn {
+  outline: none;
+  border: 1.5px solid transparent;
+  border-radius: 10px;
+  padding: 10px 10px 5px 10px;
 }
 
-li:focus,
-.item-href:focus {
+.href-btn:focus,
+.item-href-img:focus {
+  outline: #E0B59F;
+  border: 1.5px solid #E0B59F;
+  stroke: #A07C72;
+}
+
+.href-btn:active,
+.item-href-img:active {
   outline: none;
+  stroke: #E0B59F;
+}
+
+.href-btn:hover,
+.item-href-img:hover {
   outline: none;
+  stroke: #A07C72;
 }
 
 .noselect {
@@ -141,26 +174,15 @@ li:focus,
   user-select: none;
 }
 
-.href-btn:focus {
-  outline: #E0B59F;
+.link-item:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.link-item:focus {
+  outline: none;
+  color: #E0B59F;
   border: 1.5px solid #E0B59F;
-  border-radius: 10px;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-}
-
-.href-btn:hover,
-.item-href-img:focus,
-.item-href-img:active {
-  fill: #E0B59F;
-  stroke: #E0B59F;
-}
-
-.href-btn:hover,
-.item-href-img:hover {
-  fill: #A07C72;
-  stroke: #A07C72;
 }
 
 /* header */
@@ -375,27 +397,65 @@ footer {
 }
 
 .footer-data {
-  width: 55%;
+  width: 55.3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.footer-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .footer-control {
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 160%;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
 .social-networks {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  margin-left: 90px;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.shell-social-networks {
+  height: 100%;
+}
+
+.img-social-networks {
+  background-color: #000000;
+  outline: #000000;
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.img-social-networks:disabled {
+  outline: none;
+  border: 1.32px solid #CCCCCC;
+  background-color: #CCCCCC;
+}
+
+.img-social-networks:focus {
+  outline: none;
+  border: 3.32px double #E0B59F;
+}
+
+.img-social-networks:hover {
+  border: 1.32px solid #E0B59F;
+  background-color: #A07C72;
+}
+
+.img-social-networks:active {
+  outline: none;
+  border: 1.32px solid #D7C8C1;
+  background-color: #E0B59F;
 }
 
 .footer-trademark {
@@ -406,17 +466,13 @@ footer {
 /* footer */
 
 /* dialog */
-.underlayer {
-  width: 100%;
-  height: 100%;
-  background-color: #817E7E99;
-  border: none;
-  z-index: 1000;
-  position: absolute;
+dialog::backdrop {
+  position: fixed;
+  background: #817E7E99;
 }
 
 .main-dialog {
-  position: absolute;
+  position: fixed;
   width: 475.85px;
   height: 589px;
   top: 354px;
@@ -426,7 +482,6 @@ footer {
   flex-direction: column;
   background-color: #FFF;
   border-radius: 10px;
-  z-index: 1001;
 }
 
 .shell {
@@ -435,7 +490,6 @@ footer {
   flex-direction: column;
   gap: 24px;
 }
-
 
 .title-dialog {
   height: 26px;
@@ -483,7 +537,9 @@ footer {
   background-position-x: right+10px;
   background-position-y: top+6px;
   background-repeat: no-repeat;
+  font-family: "roboto", serif;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .data-name {
@@ -505,7 +561,6 @@ footer {
 .comment {
   resize: none;
   border-radius: 8px;
-  font-size: 18px;
   height: 86px;
   padding-top: 8px;
   background-image: url('../img/icon-message.svg');
@@ -626,19 +681,37 @@ footer {
     margin-bottom: 85px;
   }
 
+  .shell-header-min {
+    margin-left: 5%;
+    margin-right: 4.55%;
+    padding-top: 0;
+    margin-top: 20px;
+  }
+
   .head-menu {
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 35px;
+    gap: 0;
+  }
+
+  .link-item-href {
+    padding-top: 7px;
+  }
+
+  .href-btn {
+    margin-top: 6px;
   }
 
   .item-href {
     font-size: 40px;
+    padding: 10px 10px 5px 10px;
   }
 
-  .item-href-c,
   .item-href-a {
-    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .item-href-c {
+    margin-right: 2.3%;
   }
 
   /* header */
@@ -690,7 +763,6 @@ footer {
     margin-bottom: 19px;
   }
 
-  /* .competency-end */
   .competency {
     display: flex;
     align-items: center;
@@ -816,27 +888,33 @@ footer {
     margin-top: 80px;
     padding: 0;
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 13px;
     height: 174px;
   }
 
   .footer-data {
+    order: 1;
     width: 100%;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 52px;
   }
 
-  .footer-data {
-    order: 1;
-  }
+  /* .footer-controls {
+    outline: 1px solid wheat;
+  } */
 
   .footer-control {
-    font-size: 16px;
+    align-items: start;
+    line-height: 140%;
+
   }
 
   .social-networks {
-    padding-top: 33px;
+    padding-top: 20px;
+    gap: 16.3px;
   }
 
   .footer-trademark {
@@ -881,7 +959,8 @@ footer {
   }
 
   .head-menu {
-    padding-left: 12px;
+    padding-left: 0;
+    gap: 0;
   }
 
   .presentation {
@@ -923,7 +1002,13 @@ footer {
     font-size: 14px;
   }
 
+  footer {
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+
   .social-networks {
     margin: 0;
+    margin-top: 30px;
   }
 }
