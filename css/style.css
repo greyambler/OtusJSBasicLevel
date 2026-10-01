@@ -102,7 +102,7 @@ body {
   display: flex;
   justify-content: flex-end;
   height: 100%;
-  gap: 21px;
+  gap: 10px;
 }
 
 .href-btn {
@@ -115,6 +115,7 @@ body {
 
 .link-item-href {
   padding-top: 42px;
+  /* background-color: red; */
 }
 
 .item-href {
@@ -126,18 +127,23 @@ body {
   text-decoration: none;
   background-color: transparent;
   border: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1.5px solid transparent;
 }
 
 .item-href-a {
-  margin-left: 36px;
+  margin-left: 22px;
 }
 
 .item-href-c {
-  margin-left: 34px;
+  margin-left: 23px;
 }
 
 .href-btn {
   outline: none;
+  border: 1.5px solid transparent;
+  border-radius: 10px;
   padding: 10px 10px 5px 10px;
 }
 
@@ -145,22 +151,18 @@ body {
 .item-href-img:focus {
   outline: #E0B59F;
   border: 1.5px solid #E0B59F;
-  border-radius: 10px;
-  padding: 10px 10px 5px 10px;
   stroke: #A07C72;
 }
 
 .href-btn:active,
 .item-href-img:active {
   outline: none;
-  border: none;
   stroke: #E0B59F;
 }
 
 .href-btn:hover,
 .item-href-img:hover {
   outline: none;
-  border: none;
   stroke: #A07C72;
 }
 
@@ -180,8 +182,6 @@ body {
 .link-item:focus {
   outline: none;
   color: #E0B59F;
-  border-radius: 10px;
-  padding: 10px;
   border: 1.5px solid #E0B59F;
 }
 
@@ -711,7 +711,7 @@ dialog::backdrop {
   }
 
   .item-href-c {
-    margin-right: 4.3%;
+    margin-right: 2.3%;
   }
 
   /* header */
